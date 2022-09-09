@@ -3,6 +3,7 @@
 # Proyecto Plataforma Recogida de Paquetes InstaYA
 
 NRC:**2118**
+
 Equipo No. **06**
 
 ## Integrantes
@@ -38,6 +39,8 @@ Equipo No. **06**
 
 ---
 
+<div style="page-break-after: always"></div>
+
 ## Enunciado
 
 La empresa **InstaYA** requiere un sistema por medio del cual los usuarios puedan programar la recogida de paquetes para su futuro envío.
@@ -69,12 +72,13 @@ Deben tener en cuenta las siguientes funcionalidades:
 • El front end debe estar desarrollado en **React.js**
 • Se debe utilizar **Bootstrap** como librería CSS para manejar los estilos de su aplicación.
 
-![Propuestas Wireframe](/assets-documentacion/wireframe-propuesta.svg "Propuestas Wireframe")
+![Propuestas Wireframe](assets-documento/wireframe-propuesta.svg "Propuestas Wireframe")
+
 **Imagen 1** - Propuesta para wireframe del proyecto
 
-- <strong>[Regresar](#tabla-de-contenido)</strong>
+[&#8592; Regresar](#tabla-de-contenido)
 
----
+<div style="page-break-after: always"></div>
 
 ## Descripción de roles del equipo
 
@@ -92,25 +96,27 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 **Tabla 1** - Descripción de Roles del Equipo
 
----
+[&#8592; Regresar](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
 
 ## Diagrama de despliegue
 
-• Nombre Diagrama de despliegue #01
-
 <!-- TODO ESTE ES UN EJEMPLO DE PLANTUML PERO NO FUNCIONA DIRECTAMENTE EN GIT. TOCA TRABAJARLO EXTERNO Y SE IMPORTA EL SVG o PNG-->
 
-![Diagrama de Despliegue #1](/assets-documentacion/despliegue-ejemplo.svg "Ejemplo Diagrama Despliegue")
+![Diagrama de Despliegue #1](assets-documento/despliegue-ejemplo.svg "Ejemplo Diagrama Despliegue")
+
 **Diagrama 1** - _Descripción_
 
 <!-- TODO NOTA Este es un ejemplo de como se importa una imagen local-->
 
-![Diagrama de Despliegue #2](/assets-documentacion/despliegue-ejemplo.png "Ejemplo Diagrama Despliegue")
+![Diagrama de Despliegue #2](assets-documento/despliegue-ejemplo.png "Ejemplo Diagrama Despliegue")
+
 **Diagrama 2** - _Descripción_
 
-- <strong>[Regresar](#tabla-de-contenido)</strong>
+[&#8592; Regresar](#tabla-de-contenido)
 
----
+<div style="page-break-after: always"></div>
 
 ## Definición de Artefactos - Product Backlog
 
@@ -132,9 +138,9 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 [^2]: Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing
 
-- <strong>[Regresar](#tabla-de-contenido)</strong>
+[&#8592; Regresar](#tabla-de-contenido)
 
----
+<div style="page-break-after: always"></div>
 
 ### Backlog Sprint #1
 
@@ -148,6 +154,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 **Tabla 3** - Backlog - User Stories Sprint 1
 
+[&#8592; Regresar](#tabla-de-contenido)
+
 ### Backlog Sprint #2
 
 | Id  | Descripción | Estimación | Responsable |
@@ -159,6 +167,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 | 05  |             |            |             |
 
 **Tabla 4** - Backlog - User Stories Sprint 2
+
+[&#8592; Regresar](#tabla-de-contenido)
 
 ### Backlog Sprint #3
 
@@ -172,6 +182,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 **Tabla 5** - Backlog - User Stories Sprint 3
 
+[&#8592; Regresar](#tabla-de-contenido)
+
 ### Backlog Sprint #4
 
 | Id  | Descripción | Estimación | Responsable |
@@ -184,18 +196,17 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 **Tabla 6** - Backlog - User Stories Sprint 4
 
-- <strong>[Regresar](#tabla-de-contenido)</strong>
+[&#8592; Regresar](#tabla-de-contenido)
 
----
+<div style="page-break-after: always"></div>
 
 ## Cronograma de Tareas
 
 <!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
 <!-- https://plantuml.com/gantt-diagram -->
 
-![Diagrama de Despliegue #2](/assets-documentacion/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
+![Diagrama de Despliegue #2](assets-documento/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
+
 **Diagrama 2** - _Diagrama Gantt - Cronograma/Rúbrica General del Proyecto_
 
-- <strong>[Regresar](#tabla-de-contenido)</strong>
-
----
+[&#8592; Regresar](#tabla-de-contenido)
