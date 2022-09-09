@@ -7,11 +7,11 @@ Equipo No. **06**
 
 ## Integrantes
 
-• Angel Ernesto De Moya Mugno
-• Daniela Alejandra Ospina Rubio
-• Daritza Andrea Teherán Viñas
-• Javier Mauricio Torres Vargas
-• Jesús Antonio Vela Arango
+- Angel Ernesto De Moya Mugno
+- Daniela Alejandra Ospina Rubio
+- Daritza Andrea Teherán Viñas
+- Javier Mauricio Torres Vargas
+- Jesús Antonio Vela Arango
 
 <!-- ### Tutor -->
 
@@ -98,22 +98,9 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 • Nombre Diagrama de despliegue #01
 
-<!-- TODO ESTE ES UN EJEMPLO DE PLANTUML PERO NO FUNCIONA BIEN CON EL VISUALIZADOR MARKDOWN DE VSCODE. TOCA TRABAJARLO EXTERNO Y SE IMPORTA EL SVG o PNG-->
+<!-- TODO ESTE ES UN EJEMPLO DE PLANTUML PERO NO FUNCIONA DIRECTAMENTE EN GIT. TOCA TRABAJARLO EXTERNO Y SE IMPORTA EL SVG o PNG-->
 
-```puml
-@startuml
-node node1
-node node2
-node node3
-node node4
-node node5
-node1 -- node2 : label1
-node1 .. node3 : label2
-node1 ~~ node4 : label3
-node1 == node5
-@enduml
-```
-
+![Diagrama de Despliegue #1](/assets-documentacion/despliegue-ejemplo.svg "Ejemplo Diagrama Despliegue")
 **Diagrama 1** - _Descripción_
 
 <!-- TODO NOTA Este es un ejemplo de como se importa una imagen local-->
@@ -203,244 +190,11 @@ node1 == node5
 
 ## Cronograma de Tareas
 
-<!-- TODO NOTA Este diagrama de gann está realizado en plantuml pero se puede trabajar externo e importarlo en SVG ó PNG -->
+<!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
 <!-- https://plantuml.com/gantt-diagram -->
 
-```puml
-@startuml
-header Plataforma Recogida de Paquetes - Grupo 2118_06
-title Cronograma General del Proyecto
-<style>
-title{
-	FontName JetBrains Mono
-	FontStyle Bold
-	FontSize 12
-}
-header {
-	FontName JetBrains Mono
-	FontStyle Light
-	FontSize 10
-}
-ganttDiagram {
-	timeline {
-		FontName JetBrains Mono
-		BackgroundColor LightGray
-
-	}
-	closed {
-		BackgroundColor White
-		FontColor Gray
-	}
-	FontName JetBrains Mono
-	FontSize 10
-
-
-	task {
-		BackGroundColor GreenYellow
-		LineColor DarkGreen
-		unstarted {
-			BackGroundColor OrangeRed
-			LineColor FireBrick
-		}
-
-	}
-
-	milestone {
-			FontName JetBrains Mono
-			FontColor FireBrick
-			FontStyle bold
-			FontSize 12
-			BackgroundColor LightSalmon
-			LineColor FireBrick
-	}
-
-
-}
-</style>
-
-' Color Fondo
-
-2022-09-07 to 2022-09-13 are colored in LightGray
-2022-09-14 to 2022-09-23 are colored in LightSteelBlue
-2022-09-24 to 2022-10-05 are colored in LightGray
-2022-10-06 to 2022-10-12 are colored in LightSteelBlue
-' Nombre
-2022-09-07 to 2022-09-13 are named [Sprint 1]
-2022-09-14 to 2022-09-23 are named [Sprint 2]
-2022-09-24 to 2022-10-05 are named [Sprint 3]
-2022-10-06 to 2022-10-12 are named [Sprint 4]
-
-
-language es
-' Domingos y Feriados
-sundays are closed and are colored White
-
-' Domingo Entrega Sprint 1 Open
-2022-07-17 is open
-
-'Independencia
-2022-07-20 is closed
-2022-07-20 is colored in White
-'Batalla Boyacá
-2022-08-07 is closed
-2022-08-07 is colored in White
-'Virgen Maria
-2022-08-15 is closed
-2022-08-15 is colored in White
-'Día de la Raza
-'2022-10-17 is closed
-'2022-10-17 is colored in White
-
-'Día de los difuntos
-'2022-11-07 is closed
-'2022-11-07 is colored in White
-'Independencia de Cartagena
-'2022-11-14 is closed
-'2022-11-14 is colored in White
-'Día de la Inmaculada Concepción
-'2022-12-08 is closed
-'2022-12-08 is colored in White
-'Navidad
-'2022-12-25 is closed
-'2022-12-25 is colored in White
-
-
-2022-07-17 is colored in SteelBlue
-2022-07-28 is colored in SteelBlue
-2022-08-12 is colored in SteelBlue
-2022-08-17 is colored in SteelBlue
-
-
-Project starts 2022-09-07
-
-
---Sprint 1--
-[Planificación\n& Diseño] starts 2022-09-07 and ends 2022-09-13
-note bottom
-<b>Roles</b>
-** Definición
-<b>Diagrama Despliegue</b>
-** Descripción Componentes
-*** Hardware
-*** Software
-*** Herramientas
-<b>Artefactos</b>
-** Backlog Producto
-** Backlog Sprint
-** Asignación Backlog->Rol
-<b>Cronograma</b>
-** Definición
-
-end note
-
-[Documento Descripcion Roles] starts 2022-09-07 and lasts 1 days
-[Backlog Producto] starts 2022-09-07 and lasts 1 days
-[Backlog por Sprint] Starts 2022-09-07 and lasts 1 days
-[Asignacion Backlogs por Roles] starts 2022-09-07 and lasts 1 days
-[Documento Clases Importantes] starts 2022-09-07 and lasts 2 days
-[Definir Fechas Actividades] starts 2022-09-07 and lasts 1 days
-
-[Proyecto - Status 1] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 1] is 15% completed
-
-[Entrega #1] happens 2022-09-13
-
---Sprint 2--
-then [Front-End] starts 2022-09-14 and ends 2022-09-23
-
-
-note bottom
-<b>Mockups</b>
-** Documento
-** Mapa Navegabilidad
-<b>React</b>
-<b>Bootstrap</b>
-** Selección
-** Implementación
-<b>GIT</b>
-** Creacion Proyecto en GIT
-end note
-[Documento Mapa Navegabilidad] starts 2022-09-14 and lasts 3 days
-[Diseño Vistas] starts 2022-09-14 and lasts 2 days
-[Documento Vistas] starts 2022-09-14 and lasts 2 days
-[Selección/Implementación\nEstilos Vistas] starts 2022-09-14 and lasts 2 days
-[GIT] starts 2022-09-14 and lasts 3 days
-
-[Proyecto - Status 2] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 2] is 35% completed
-
-[Entrega #2] happens 2022-09-23
-
---Sprint 3--
-then [Forms & API] Starts 2022-09-24 and ends 2022-10-05
-note bottom
-<b>Componentes</b>
-** Documento
-** Esqueleto componentes
-<b>Formularios</b>
-** Formularios & Vinculos
-*** Mapa Navegabilidad
-** Renderizado
-<b>Simulación API</b>
-** Documento pruebas
-    solicitudes API
-end note
-[Especificación Ruta] starts 2022-09-24 and lasts 2 days
-[Definición HTTP] starts 2022-09-24 and lasts 1 days
-[Lógica Algorítmica] starts 2022-09-24 and lasts 3 days
-[Documento Controladores] starts 2022-09-24 and lasts 2 days
-[Diagrama Relacional] starts 2022-09-24 and lasts 1 days
-[Diseño BD MongoDB] starts 2022-09-24 and lasts 3 days
-[Documento BD] starts 2022-09-24 and lasts 2 days
-[Validación Datos Entrada] starts 2022-09-24 and lasts 2 days
-[Prepared Statements] starts 2022-09-24 and lasts 2 days
-[Queries Consultar/Actualizar BD] starts 2022-09-24 and lasts 2 days
-[Documento Buenas Prácticas] starts 2022-09-24 and lasts 2 days
-[Creación Sesiones] starts 2022-09-24 and lasts 4 days
-[Funciones Hash para\nAlmacenar Contraseñas(salts)] starts 2022-09-24 and lasts 3 days
-
-[Proyecto - Status 3] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 3] is 80% completed
-
-[Entrega #3] happens 2022-10-05
-
---Sprint 4--
-then [Back & Deploy] Starts 2022-10-06 and ends 2022-10-12
-note bottom
-<b>Base de Datos</b>
-    <b>No-Relacional</b>
-<b>Node.js</b>
-<b>Back-End</b>
-<b>Conectividad BD</b>
-<b>Despliegue Aplicación</b>
-** Requerimientos
-** Documentación
-** Verificación
-end note
-
-[Requerimientos Despliegue] starts 2022-10-06 and lasts 3 days
-[Documento Requerimientos &\nProceso Despliegue] starts 2022-10-06 and lasts 2 days
-[Despliegue(por Definir)] starts 2022-10-06 and lasts 2 days
-[Verificación Dominio\nhttps://mi_dominio] starts 2022-10-06 and lasts 2 days
-[Verificación App] starts 2022-10-06 and lasts 3 days
-
-[Proyecto - Status 4] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 4] is 100% completed
-
-[Entrega Final] happens at [Back & Deploy]'s end
-
-[Planificación\n& Diseño] is colored in Fuchsia/FireBrick
-[Front-End] is colored in LimeGreen/Green
-[Forms & API] is colored in salmon/Red
-[Back & Deploy] is colored in LightBlue/Blue
-[Entrega Final] is colored in LightGreen/Green
-
-
-@enduml
-
-```
-
-**Diagrama 1** - Diagrama Gantt - Cronograma/Rúbrica General del Proyecto
+![Diagrama de Despliegue #2](/assets-documentacion/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
+**Diagrama 2** - _Diagrama Gantt - Cronograma/Rúbrica General del Proyecto_
 
 - <strong>[Regresar](#tabla-de-contenido)</strong>
 
