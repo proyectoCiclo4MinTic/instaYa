@@ -12,13 +12,16 @@ actor "Usuario"
 
 ' ]
 
-node "Dispositivo Cliente" <<Windows, Linux, Mac, IOS, Android>> {
+node "Dispositivo Cliente" <<device - Windows, Linux, Mac, IOS, Android>> {
 
-    [Navegador] <<Aplicación>>
+    node Navegador <<Aplicación>> {
+        artifact Bootstrap <<artifact>>
+        artifact React.js <<artifact>>
+    }
 
 }
 
-node "Servidor Web" {
+node "Servidor Web" <<device>> {
     node "Aplicación" <<react>> {
         [Login]
         [Registro]
@@ -28,12 +31,19 @@ node "Servidor Web" {
 
     }
     component "Servidor HTTP"
-    component "Interfaz BD" <<API Node.js>>
+    node "Interfaz BD - Node.Js" <<API Node.js>> as IBD {
+        node "Express.js" {
+            [Express Middleware]
+            [Express Routing]
+
+        }
+
+    }
 }
 
-node "Servidor BD" {
-    
-    artifact "MongoDB"
+node "Servidor BD" <<device>> {
+
+    database "MongoDB"
     component "Almacenamiento"
 }
 
@@ -42,18 +52,18 @@ node "Servidor BD" {
 ' }
 node "ISP"
 
-[Usuario] <--> [Navegador] : UI
 
-[Navegador] <-> ISP : HTTP/HTTPS
+[Usuario] <-> Navegador : UI
+Navegador <--> ISP : HTTP/HTTPS
 ISP <--> [Servidor HTTP] : HTTP/HTTPS
 
 Aplicación <-> [Servidor HTTP]
-Aplicación <-> [Interfaz BD]
-[Servidor HTTP] <--> [Interfaz BD]
+Aplicación <-> IBD
+[Servidor HTTP] <--> IBD
 
 
 ' [Navegador] <--> [Servidor HTTP] : <<HTTP/HTTPS>>\nISP
-[Interfaz BD] <---> [MongoDB] : TCP/IP
+IBD <---> [MongoDB] : TCP/IP
 [MongoDB] <-> [Almacenamiento]
 
 [Login] -> [Registro]
