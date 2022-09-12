@@ -102,17 +102,17 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 ## Diagrama de despliegue
 
+<!-- http://ingsoftware-luiszambrano.blogspot.com/2015/07/diagrama-de-despliegue.html -->
+
 <!-- TODO ESTE ES UN EJEMPLO DE PLANTUML PERO NO FUNCIONA DIRECTAMENTE EN GIT. TOCA TRABAJARLO EXTERNO Y SE IMPORTA EL SVG o PNG-->
 
-![Diagrama de Despliegue #1](assets-documento/despliegue-ejemplo.svg "Ejemplo Diagrama Despliegue")
+![Diagrama de Despliegue del proyecto InstaYA #1](assets-documento/diagrama-despliegue01.svg "Ejemplo Diagrama Despliegue")
 
-**Diagrama 1** - _Descripción_
+**Diagrama 1** - _Diagrama de Despliegue del proyecto InstaYA_
 
-<!-- TODO NOTA Este es un ejemplo de como se importa una imagen local-->
-
+<!-- TODO NOTA Este es un ejemplo de como se importa una imagen local
 ![Diagrama de Despliegue #2](assets-documento/despliegue-ejemplo.png "Ejemplo Diagrama Despliegue")
-
-**Diagrama 2** - _Descripción_
+**Diagrama 2** - _Descripción_ -->
 
 [&#8592; Regresar](#tabla-de-contenido)
 

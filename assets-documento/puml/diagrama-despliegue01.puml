@@ -1,0 +1,64 @@
+@startuml
+
+' !include https://raw.githubusercontent.com/ptrkcsk/one-dark-plantuml-theme/v1.0.0/theme.puml
+
+title Diagrama de Despliegue\nSistema de Reserva\npara Plataforma de Envíos InstaYA
+actor "Usuario"
+' node node [
+' <b>Sistema de Login
+' ----
+' Inicializa el panel de usuario
+' Registra Usuario
+
+' ]
+
+node "Dispositivo Cliente" <<Windows, Linux, Mac, IOS, Android>> {
+
+    [Navegador] <<Aplicación>>
+
+}
+
+node "Servidor Web" {
+    node "Aplicación" <<react>> {
+        [Login]
+        [Registro]
+        [Listado Órdenes]
+        [Registro Órdenes]
+        [Actualización Órdenes]
+
+    }
+    component "Servidor HTTP"
+    component "Interfaz BD" <<API Node.js>>
+}
+
+node "Servidor BD" {
+    
+    artifact "MongoDB"
+    component "Almacenamiento"
+}
+
+' node ISP <<Access Point>> {
+'     rectangle "???"
+' }
+node "ISP"
+
+[Usuario] <--> [Navegador] : UI
+
+[Navegador] <-> ISP : HTTP/HTTPS
+ISP <--> [Servidor HTTP] : HTTP/HTTPS
+
+Aplicación <-> [Servidor HTTP]
+Aplicación <-> [Interfaz BD]
+[Servidor HTTP] <--> [Interfaz BD]
+
+
+' [Navegador] <--> [Servidor HTTP] : <<HTTP/HTTPS>>\nISP
+[Interfaz BD] <---> [MongoDB] : TCP/IP
+[MongoDB] <-> [Almacenamiento]
+
+[Login] -> [Registro]
+[Login] --> [Listado Órdenes]
+[Listado Órdenes] -> [Actualización Órdenes]
+[Listado Órdenes] --> [Registro Órdenes]
+
+@enduml

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1029px" preserveAspectRatio="none" style="width:815px;height:1029px;background:#FFFFFF;" version="1.1" viewBox="0 0 815 1029" width="815px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="62.8281" id="_title" style="stroke:none;stroke-width:1.0;" width="250" x="275.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="171" x="315" y="24.5332">Diagrama de Despliegue</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="140" x="330.5" y="42.1426">Sistema de Reserva</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="240" x="280.5" y="59.752">para Plataforma de Envíos InstaYA</text><!--MD5=[54562364cd4ea45a60cec944083c2372]
+cluster Dispositivo Cliente--><g id="cluster_Dispositivo Cliente"><polygon fill="none" points="159,231.3281,169,221.3281,473,221.3281,473,351.3281,463,361.3281,159,361.3281,159,231.3281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="463" x2="473" y1="231.3281" y2="221.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="159" x2="463" y1="231.3281" y2="231.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="463" x2="463" y1="231.3281" y2="361.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="238" x="193" y="248.8613">«Windows, Linux, Mac, IOS, Android»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="133" x="245.5" y="266.4707">Dispositivo Cliente</text></g><!--MD5=[bd90ffa7a8662ad8ca54e14c9a9071ea]
+cluster Servidor Web--><g id="cluster_Servidor Web"><polygon fill="none" points="16,421.3281,26,411.3281,643,411.3281,643,864.3281,633,874.3281,16,874.3281,16,421.3281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="633" x2="643" y1="421.3281" y2="411.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="633" y1="421.3281" y2="421.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="633" x2="633" y1="421.3281" y2="874.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="96" x="277.5" y="438.8613">Servidor Web</text></g><!--MD5=[7d0c07f9a6de271d4645135cfac067fc]
+cluster Aplicación--><g id="cluster_Aplicación"><polygon fill="none" points="48,478.3281,58,468.3281,466,468.3281,466,832.3281,456,842.3281,48,842.3281,48,478.3281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="456" x2="466" y1="478.3281" y2="468.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="48" x2="456" y1="478.3281" y2="478.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="456" x2="456" y1="478.3281" y2="842.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="48" x="229" y="495.8613">«react»</text><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="72" x="217" y="513.4707">Aplicación</text></g><!--MD5=[737b3725d8b120505f8bbcbb1937784b]
+cluster Servidor BD--><g id="cluster_Servidor BD"><polygon fill="none" points="495,917.3281,505,907.3281,798,907.3281,798,1002.3281,788,1012.3281,495,1012.3281,495,917.3281" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="788" x2="798" y1="917.3281" y2="907.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="495" x2="788" y1="917.3281" y2="917.3281"/><line style="stroke:#181818;stroke-width:1.0;" x1="788" x2="788" y1="917.3281" y2="1012.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="85" x="600" y="934.8613">Servidor BD</text></g><!--MD5=[8ed08469123f7585c9ad81d9b8ace7be]
+entity Navegador--><g id="elem_Navegador"><rect fill="#F1F1F1" height="65.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="120" x="296" y="280.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="396" y="285.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="394" y="287.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="394" y="291.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="80" x="311" y="314.8613">«Aplicación»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="316.5" y="332.4707">Navegador</text></g><!--MD5=[412002fae51c56458fd5c3992d117e33]
+entity Servidor HTTP--><g id="elem_Servidor HTTP"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="133" x="493.5" y="535.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="606.5" y="540.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="604.5" y="542.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="604.5" y="546.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="508.5" y="569.8613">Servidor HTTP</text></g><!--MD5=[fadb65dc8dcfcd964900b48cc8cf0a9d]
+entity Interfaz BD--><g id="elem_Interfaz BD"><rect fill="#F1F1F1" height="65.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="130" x="492" y="644.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="602" y="649.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="600" y="651.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="600" y="655.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="90" x="507" y="678.8613">«API Node.js»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="517.5" y="696.4707">Interfaz BD</text></g><!--MD5=[23689a62b5e80204d759960f89ec0344]
+entity Login--><g id="elem_Login"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="75" x="107.5" y="535.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="162.5" y="540.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="160.5" y="542.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="160.5" y="546.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="122.5" y="569.8613">Login</text></g><!--MD5=[7962d6575b0bd42420db1a2fcdd425c0]
+entity Registro--><g id="elem_Registro"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="217.5" y="535.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="290.5" y="540.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="288.5" y="542.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="288.5" y="546.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="232.5" y="569.8613">Registro</text></g><!--MD5=[dcd897c62e27237b84d6f36ed398ec45]
+entity Listado Órdenes--><g id="elem_Listado Órdenes"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="145" x="72.5" y="652.8281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="197.5" y="657.8281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="195.5" y="659.8281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="195.5" y="663.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="87.5" y="687.3613">Listado Órdenes</text></g><!--MD5=[cb05a017d77127e4ab93044c32e6ea28]
+entity Registro Órdenes--><g id="elem_Registro Órdenes"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="72" y="770.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="204" y="775.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="202" y="777.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="202" y="781.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="87" y="804.8613">Registro Órdenes</text></g><!--MD5=[ee2af25947cc7c84f452636fd685c794]
+entity Actualización Órdenes--><g id="elem_Actualización Órdenes"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="252.5" y="652.8281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="413.5" y="657.8281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="411.5" y="659.8281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="411.5" y="663.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="267.5" y="687.3613">Actualización Órdenes</text></g><!--MD5=[ba72416187da2a396e219ea5b5d73a26]
+entity MongoDB--><g id="elem_MongoDB"><rect fill="#F1F1F1" height="40.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="92" x="511" y="951.8281"/><polygon fill="#F1F1F1" points="586,956.8281,586,970.8281,598,970.8281,598,962.8281,592,956.8281,586,956.8281" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="592" x2="592" y1="956.8281" y2="962.8281"/><line style="stroke:#181818;stroke-width:0.5;" x1="598" x2="592" y1="962.8281" y2="962.8281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="521" y="979.3613">MongoDB</text></g><!--MD5=[be62abfecf94cac247d0f11cfa453d87]
+entity Almacenamiento--><g id="elem_Almacenamiento"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="144" x="638" y="948.3281"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="762" y="953.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="760" y="955.3281"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="760" y="959.3281"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="653" y="982.8613">Almacenamiento</text></g><!--MD5=[128f0757cf0ea77f14e95a88885fd9f7]
+entity Usuario--><g id="elem_Usuario"><ellipse cx="356" cy="87.8281" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M356,95.8281 L356,122.8281 M343,103.8281 L369,103.8281 M356,122.8281 L343,137.8281 M356,122.8281 L369,137.8281 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="332" y="153.8613">Usuario</text></g><!--MD5=[3ef2c257a260a1654a7c160846509a32]
+entity ISP--><g id="elem_ISP"><polygon fill="#F1F1F1" points="529.5,298.8281,539.5,288.8281,590.5,288.8281,590.5,326.4375,580.5,336.4375,529.5,336.4375,529.5,298.8281" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="580.5" x2="590.5" y1="298.8281" y2="288.8281"/><line style="stroke:#181818;stroke-width:0.5;" x1="529.5" x2="580.5" y1="298.8281" y2="298.8281"/><line style="stroke:#181818;stroke-width:0.5;" x1="580.5" x2="580.5" y1="298.8281" y2="336.4375"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="544.5" y="323.3613">ISP</text></g><!--MD5=[d339afe8c85043fd404b919b5f59b290]
+link Usuario to Navegador--><g id="link_Usuario_Navegador"><path d="M356,162.5281 C356,196.4381 356,243.1281 356,275.2181 " fill="none" id="Usuario-Navegador" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="356,280.2381,360,271.2381,356,275.2381,352,271.2381,356,280.2381" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="356,157.3581,352,166.3581,356,162.3581,360,166.3581,356,157.3581" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="357" y="201.8232">UI</text></g><!--MD5=[a6b469e6c7eb706a38bb573e226f0522]
+link Navegador to ISP--><g id="link_Navegador_ISP"><path d="M421.4,312.8281 C455.54,312.8281 495.98,312.8281 524.34,312.8281 " fill="none" id="Navegador-ISP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="529.49,312.8281,520.49,308.8281,524.49,312.8281,520.49,316.8281,529.49,312.8281" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="416.1,312.8281,425.1,316.8281,421.1,312.8281,425.1,308.8281,416.1,312.8281" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="434.25" y="306.3232">HTTP/HTTPS</text></g><!--MD5=[ec23a44cb79b88e79675dcf54c1981ff]
+link ISP to Servidor HTTP--><g id="link_ISP_Servidor HTTP"><path d="M560,341.9581 C560,388.9381 560,482.8481 560,529.9781 " fill="none" id="ISP-Servidor HTTP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="560,535.2081,564,526.2081,560,530.2081,556,526.2081,560,535.2081" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="560,336.8281,556,345.8281,560,341.8281,564,345.8281,560,336.8281" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="561" y="391.8232">HTTP/HTTPS</text></g><!--MD5=[9c8d8800bbf905b3295316fa4a2d33f8]
+link Aplicación to Servidor HTTP--><g id="link_Aplicación_Servidor HTTP"><path d="M466.0664,559.3281 C466.1439,559.3281 466.2213,559.3281 466.2988,559.3281 C466.4537,559.3281 466.6086,559.3281 466.7635,559.3281 C467.0733,559.3281 467.3831,559.3281 467.6929,559.3281 C468.3126,559.3281 468.9322,559.3281 469.5519,559.3281 C470.7913,559.3281 472.0306,559.3281 473.27,559.3281 C478.2275,559.3281 483.185,559.3281 488.14,559.3281 " fill="none" id="Aplicación-Servidor HTTP" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="493.32,559.3281,484.32,555.3281,488.32,559.3281,484.32,563.3281,493.32,559.3281" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="466.0664,559.3281,475.0664,563.3281,471.0664,559.3281,475.0664,555.3281,466.0664,559.3281" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[98164df4d44f151f413452f77303977d]
+link Aplicación to Interfaz BD--><g id="link_Aplicación_Interfaz BD"><path d="M466.0443,590.456 C466.248,590.7915 466.4533,591.1266 466.66,591.461 C468.314,594.1365 470.0633,596.7752 471.8922,599.373 C475.55,604.5684 479.5262,609.6 483.695,614.4344 C492.0325,624.1031 501.14,632.9831 510.01,640.8081 " fill="none" id="Aplicación-Interfaz BD" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="514.02,644.2881,509.8424,635.3692,510.243,641.0118,504.6003,641.4124,514.02,644.2881" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="466.0443,590.456,467.2957,600.225,468.6391,594.73,474.1341,596.0734,466.0443,590.456" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b398d0f8891921156cba0c593fd49f21]
+link Servidor HTTP to Interfaz BD--><g id="link_Servidor HTTP_Interfaz BD"><path d="M559.27,588.4781 C558.88,603.5581 558.39,622.3381 557.97,638.6081 " fill="none" id="Servidor HTTP-Interfaz BD" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="557.83,644.0281,562.06,635.1339,557.9585,639.0298,554.0627,634.9283,557.83,644.0281" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="559.4,583.4281,555.17,592.3223,559.2715,588.4265,563.1673,592.528,559.4,583.4281" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0acb67b799b014e086816f9b82eb0c55]
+link Interfaz BD to MongoDB--><g id="link_Interfaz BD_MongoDB"><path d="M557,714.6581 C557,775.3281 557,894.7181 557,946.4481 " fill="none" id="Interfaz BD-MongoDB" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="557,951.5281,561,942.5281,557,946.5281,553,942.5281,557,951.5281" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="557,709.5181,553,718.5181,557,714.5181,561,718.5181,557,709.5181" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="558" y="799.8232">TCP/IP</text></g><!--MD5=[c5ce7ffb3d789285794f6039ad5d43e5]
+link MongoDB to Almacenamiento--><g id="link_MongoDB_Almacenamiento"><path d="M608.17,972.3281 C616.32,972.3281 624.47,972.3281 632.63,972.3281 " fill="none" id="MongoDB-Almacenamiento" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="637.7,972.3281,628.7,968.3281,632.7,972.3281,628.7,976.3281,637.7,972.3281" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="603.02,972.3281,612.02,976.3281,608.02,972.3281,612.02,968.3281,603.02,972.3281" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ce3d4321b48e3111c4d0a69f7859f938]
+link Login to Registro--><g id="link_Login_Registro"><path d="M182.65,559.3281 C192.48,559.3281 202.32,559.3281 212.15,559.3281 " fill="none" id="Login-to-Registro" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="217.29,559.3281,208.29,555.3281,212.29,559.3281,208.29,563.3281,217.29,559.3281" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cc10aabb34300fc3d8db889f1c26039c]
+link Login to Listado Órdenes--><g id="link_Login_Listado Órdenes"><path d="M145,583.4281 C145,601.9181 145,627.9281 145,647.6481 " fill="none" id="Login-to-Listado Órdenes" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="145,652.7681,149,643.7681,145,647.7681,141,643.7681,145,652.7681" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[752cb19d476226f43948b8cd53c68602]
+link Listado Órdenes to Actualización Órdenes--><g id="link_Listado Órdenes_Actualización Órdenes"><path d="M217.7,676.8281 C227.57,676.8281 237.43,676.8281 247.3,676.8281 " fill="none" id="Listado Órdenes-to-Actualización Órdenes" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="252.45,676.8281,243.45,672.8281,247.45,676.8281,243.45,680.8281,252.45,676.8281" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[561e25d85105b16918fe6104a3b68a2a]
+link Listado Órdenes to Registro Órdenes--><g id="link_Listado Órdenes_Registro Órdenes"><path d="M145.6,700.9281 C146.08,719.4181 146.76,745.4281 147.27,765.1481 " fill="none" id="Listado Órdenes-to-Registro Órdenes" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="147.4,770.2681,151.1673,761.1683,147.2715,765.2698,143.17,761.3739,147.4,770.2681" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7dab78efb91e7a6641173e1caddfbfa7]
+@startuml
+
+' !include https://raw.githubusercontent.com/ptrkcsk/one-dark-plantuml-theme/v1.0.0/theme.puml
+
+title Diagrama de Despliegue\nSistema de Reserva\npara Plataforma de Envíos InstaYA
+actor "Usuario"
+' node node [
+' <b>Sistema de Login
+' - - - -
+' Inicializa el panel de usuario
+' Registra Usuario
+
+' ]
+
+node "Dispositivo Cliente" <<Windows, Linux, Mac, IOS, Android>> {
+
+    [Navegador] <<Aplicación>>
+
+}
+
+node "Servidor Web" {
+    node "Aplicación" <<react>> {
+        [Login]
+        [Registro]
+        [Listado Órdenes]
+        [Registro Órdenes]
+        [Actualización Órdenes]
+
+    }
+    component "Servidor HTTP"
+    component "Interfaz BD" <<API Node.js>>
+}
+
+node "Servidor BD" {
+    
+    artifact "MongoDB"
+    component "Almacenamiento"
+}
+
+' node ISP <<Access Point>> {
+'     rectangle "???"
+' }
+node "ISP"
+
+[Usuario] <- -> [Navegador] : UI
+
+[Navegador] <-> ISP : HTTP/HTTPS
+ISP <- -> [Servidor HTTP] : HTTP/HTTPS
+
+Aplicación <-> [Servidor HTTP]
+Aplicación <-> [Interfaz BD]
+[Servidor HTTP] <- -> [Interfaz BD]
+
+
+' [Navegador] <- -> [Servidor HTTP] : <<HTTP/HTTPS>>\nISP
+[Interfaz BD] <- - -> [MongoDB] : TCP/IP
+[MongoDB] <-> [Almacenamiento]
+
+[Login] -> [Registro]
+[Login] - -> [Listado Órdenes]
+[Listado Órdenes] -> [Actualización Órdenes]
+[Listado Órdenes] - -> [Registro Órdenes]
+
+@enduml
+
+@startuml
+
+
+title Diagrama de Despliegue\nSistema de Reserva\npara Plataforma de Envíos InstaYA
+actor "Usuario"
+
+
+node "Dispositivo Cliente" <<Windows, Linux, Mac, IOS, Android>> {
+
+    [Navegador] <<Aplicación>>
+
+}
+
+node "Servidor Web" {
+    node "Aplicación" <<react>> {
+        [Login]
+        [Registro]
+        [Listado Órdenes]
+        [Registro Órdenes]
+        [Actualización Órdenes]
+
+    }
+    component "Servidor HTTP"
+    component "Interfaz BD" <<API Node.js>>
+}
+
+node "Servidor BD" {
+    
+    artifact "MongoDB"
+    component "Almacenamiento"
+}
+
+node "ISP"
+
+[Usuario] <- -> [Navegador] : UI
+
+[Navegador] <-> ISP : HTTP/HTTPS
+ISP <- -> [Servidor HTTP] : HTTP/HTTPS
+
+Aplicación <-> [Servidor HTTP]
+Aplicación <-> [Interfaz BD]
+[Servidor HTTP] <- -> [Interfaz BD]
+
+
+[Interfaz BD] <- - -> [MongoDB] : TCP/IP
+[MongoDB] <-> [Almacenamiento]
+
+[Login] -> [Registro]
+[Login] - -> [Listado Órdenes]
+[Listado Órdenes] -> [Actualización Órdenes]
+[Listado Órdenes] - -> [Registro Órdenes]
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 12:01:30 COT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
