@@ -27,6 +27,7 @@ Equipo No. **06**
   - [Tabla de Contenido](#tabla-de-contenido)
   - [Enunciado](#enunciado)
     - [Notas](#notas)
+    - [Propuesta Wireframe](#propuesta-wireframe)
   - [Descripción de roles del equipo](#descripción-de-roles-del-equipo)
   - [Diagrama de despliegue](#diagrama-de-despliegue)
   - [Definición de Artefactos - Product Backlog](#definición-de-artefactos---product-backlog)
@@ -62,9 +63,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 • Los datos suministrados por los usuarios deben cumplir la política de **_privacidad de datos vigente_**, es decir las **contraseñas** de los usuarios deben almacenarse de forma cifrada y la **conexión al servidor** debe realizarse de forma segura.
 
-> _Se entiende por información personal aquella suministrada por el usuario para el registro, la cual incluye datos como nombre, identificación, edad, género, dirección, correo electrónico y teléfono._[^1]
-
-[^1]: https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales
+> _Se entiende por información personal aquella suministrada por el usuario para el registro, la cual incluye datos como nombre, identificación, edad, género, dirección, correo electrónico y teléfono._^[Ministerio de Comercio, Industria y Turismo.(5 de mayo de 2022). _Políticas de tratamiento de datos personales_. https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales]
 
 • La base de datos debe ser **no relacional**.
 • Se debe utilizar una **arquitectura desacoplada**, es decir, una API back end y un front end que consuma dicha API.
@@ -72,7 +71,11 @@ Deben tener en cuenta las siguientes funcionalidades:
 • El front end debe estar desarrollado en **React.js**
 • Se debe utilizar **Bootstrap** como librería CSS para manejar los estilos de su aplicación.
 
-![Propuestas Wireframe](/assets-documento/wireframe-propuesta.svg "Propuestas Wireframe")
+<div style="page-break-after: always"></div>
+
+### Propuesta Wireframe
+
+![Propuestas Wireframe](assets-documento/wireframe-propuesta.svg "Propuestas Wireframe")
 
 **Imagen 1** - Propuesta para wireframe del proyecto
 
@@ -104,16 +107,11 @@ Deben tener en cuenta las siguientes funcionalidades:
 ## Diagrama de despliegue
 
 <!-- http://ingsoftware-luiszambrano.blogspot.com/2015/07/diagrama-de-despliegue.html -->
+<!-- TODO NOTA  Los archivos de extensión .puml NO FUNCIONAN DIRECTAMENTE EN GIT. TOCA EXPORTA EL SVG o PNG-->
 
-<!-- TODO ESTE ES UN EJEMPLO DE PLANTUML PERO NO FUNCIONA DIRECTAMENTE EN GIT. TOCA TRABAJARLO EXTERNO Y SE IMPORTA EL SVG o PNG-->
+![Diagrama de Despliegue del Sistema de Reserva para el Proyecto InstaYA #1](assets-documento/diagrama-despliegue01.svg "Diagrama de Despliegue del Sistema de Reserva para el Proyecto InstaYA")
 
-![Diagrama de Despliegue del proyecto InstaYA #1](/assets-documento/diagrama-despliegue01.svg "Ejemplo Diagrama Despliegue")
-
-**Diagrama 1** - _Diagrama de Despliegue del proyecto InstaYA_
-
-<!-- TODO NOTA Este es un ejemplo de como se importa una imagen local
-![Diagrama de Despliegue #2](assets-documento/despliegue-ejemplo.png "Ejemplo Diagrama Despliegue")
-**Diagrama 2** - _Descripción_ -->
+**Diagrama 1** - _Diagrama de Despliegue del Sistema de Reserva para el Proyecto InstaYA_
 
 [&#8592; Regresar](#tabla-de-contenido)
 
@@ -135,9 +133,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 | 21           | **¡Riesgoso!**           | Un “21” o “34” refleja mucha complejidad para realizar en un sprint. Necesita más refinamiento. El gran tamaño indica mayor riesgo, suposiciones, y más dependencias involucradas para completar este tipo de ítems                                                                                   |
 | ?            | **¡Peligro!**            | Como desarrollador, no queremos hacer este tipo de trabajo de la forma que se encuentra escrito. Presenta un alto grado de complejidad y no se puede completar en el marco de tiempo de un ciclo, iteración o Sprint. Tal vez los requerimientos son demasiado confusos que están plagados de peligro |
 
-**Tabla 2** - Calificación por Método de Estimación Fibonacci [^2]
-
-[^2]: Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing
+**Tabla 2** - Calificación por Método de Estimación Fibonacci ^[Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing]
 
 [&#8592; Regresar](#tabla-de-contenido)
 
@@ -157,6 +153,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 [&#8592; Regresar](#tabla-de-contenido)
 
+<div style="page-break-after: always"></div>
+
 ### Backlog Sprint #2
 
 | Id  | User Story                                                                                                                                                                                                                                                                                   | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Estimación     | Responsable                                                                                                                      |
@@ -171,6 +169,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 [&#8592; Regresar](#tabla-de-contenido)
 
+<div style="page-break-after: always"></div>
+
 ### Backlog Sprint #3
 
 | Id  | User Story                                                                                                                                                                                                                                                                                   | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Estimación     | Responsable                                                                                                          |
@@ -184,6 +184,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 **Tabla 5** - Backlog - User Stories Sprint 3
 
 [&#8592; Regresar](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
 
 ### Backlog Sprint #4
 
@@ -206,7 +208,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 <!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
 <!-- https://plantuml.com/gantt-diagram -->
 
-![Diagrama de Despliegue #2](/assets-documento/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
+![Diagrama de Despliegue #2](assets-documento/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
 
 **Diagrama 2** - _Diagrama Gantt - Cronograma/Rúbrica General del Proyecto_
 

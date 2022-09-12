@@ -2,7 +2,7 @@
 
 ' !include https://raw.githubusercontent.com/ptrkcsk/one-dark-plantuml-theme/v1.0.0/theme.puml
 
-title Diagrama de Despliegue\nSistema de Reserva\npara Plataforma de Envíos InstaYA
+' title Diagrama de Despliegue\nSistema de Reserva\npara Plataforma de Envíos InstaYA
 actor "Usuario"
 ' node node [
 ' <b>Sistema de Login
@@ -22,16 +22,16 @@ node "Dispositivo Cliente" <<device - Windows, Linux, Mac, IOS, Android>> {
 }
 
 node "Servidor Web" <<device>> {
-    node "Aplicación" <<react>> {
-        [Login]
-        [Registro]
-        [Listado Órdenes]
-        [Registro Órdenes]
-        [Actualización Órdenes]
+    node "Aplicación" <<React.js>> {
+        ' [Login]
+        ' [Registro]
+        ' [Listado Órdenes]
+        ' [Registro Órdenes]
+        ' [Actualización Órdenes]
 
     }
     component "Servidor HTTP"
-    node "Interfaz BD - Node.Js" <<API Node.js>> as IBD {
+    node "Interfaz BD - Node.Js" <<Execution Environment>> as IBD {
         node "Express.js" {
             [Express Middleware]
             [Express Routing]
@@ -50,25 +50,25 @@ node "Servidor BD" <<device>> {
 ' node ISP <<Access Point>> {
 '     rectangle "???"
 ' }
-node "ISP"
+' node "ISP"
 
 
 [Usuario] <-> Navegador : UI
-Navegador <--> ISP : HTTP/HTTPS
-ISP <--> [Servidor HTTP] : HTTP/HTTPS
-
+' Navegador <--> ISP : HTTP/HTTPS
+' ISP <--> [Servidor HTTP] : HTTP/HTTPS
+Navegador <--> [Servidor HTTP] : HTTP/HTTPS
 Aplicación <-> [Servidor HTTP]
 Aplicación <-> IBD
 [Servidor HTTP] <--> IBD
 
 
 ' [Navegador] <--> [Servidor HTTP] : <<HTTP/HTTPS>>\nISP
-IBD <---> [MongoDB] : TCP/IP
+IBD <--> [MongoDB] : TCP/IP
 [MongoDB] <-> [Almacenamiento]
 
-[Login] -> [Registro]
-[Login] --> [Listado Órdenes]
-[Listado Órdenes] -> [Actualización Órdenes]
-[Listado Órdenes] --> [Registro Órdenes]
+' [Login] -> [Registro]
+' [Login] --> [Listado Órdenes]
+' [Listado Órdenes] -> [Actualización Órdenes]
+' [Listado Órdenes] --> [Registro Órdenes]
 
 @enduml

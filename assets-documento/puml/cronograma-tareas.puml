@@ -107,32 +107,24 @@ Project starts 2022-09-07
 
 --Sprint 1--
 [Planificación\n& Diseño] starts 2022-09-07 and ends 2022-09-13
+
+[Definición Roles] starts 2022-09-07 and lasts 1 days
+[Backlog Producto] starts 2022-09-07 and lasts 2 days
+then [Backlog por Sprint] lasts 1 days
+then [Asignacion Backlogs por Roles] lasts 1 days
+[Diagrama Despliegue] starts 2022-09-10 and lasts 2 days
 note bottom
-<b>Roles</b>
-** Definición
-<b>Diagrama Despliegue</b>
+' <b>Diagrama Despliegue</b>
 ** Descripción Componentes
 *** Hardware
 *** Software
 *** Herramientas
-<b>Artefactos</b>
-** Backlog Producto
-** Backlog Sprint
-** Asignación Backlog->Rol
-<b>Cronograma</b>
-** Definición
-
 end note
-
-[Documento Descripcion Roles] starts 2022-09-07 and lasts 1 days
-[Backlog Producto] starts 2022-09-07 and lasts 1 days
-[Backlog por Sprint] Starts 2022-09-07 and lasts 1 days
-[Asignacion Backlogs por Roles] starts 2022-09-07 and lasts 1 days
-[Documento Clases Importantes] starts 2022-09-07 and lasts 2 days
-[Definir Fechas Actividades] starts 2022-09-07 and lasts 1 days
+[Definir Cronograma] starts 2022-09-09 and lasts 3 days
+[Documento #1] starts 2022-09-07 and ends 2022-09-13
 
 [Proyecto - Status 1] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 1] is 15% completed
+[Proyecto - Status 1] is 20% completed
 
 [Entrega #1] happens 2022-09-13
 
@@ -140,83 +132,56 @@ end note
 then [Front-End] starts 2022-09-14 and ends 2022-09-23
 
 
+[Mapa Navegabilidad] starts 2022-09-14 and lasts 3 days and is 0% completed
+[Mockups] starts 2022-09-14 and lasts 3 days and is 0% completed
+then [Front-End React] starts 2022-09-14 and lasts 2 days and is 0% completed
+then [Plantilla Bootstrap] starts 2022-09-14 and lasts 2 days and is 0% completed
 note bottom
-<b>Mockups</b>
-** Documento
-** Mapa Navegabilidad
-<b>React</b>
-<b>Bootstrap</b>
 ** Selección
 ** Implementación
-<b>GIT</b>
-** Creacion Proyecto en GIT
 end note
-[Documento Mapa Navegabilidad] starts 2022-09-14 and lasts 3 days
-[Diseño Vistas] starts 2022-09-14 and lasts 2 days
-[Documento Vistas] starts 2022-09-14 and lasts 2 days
-[Selección/Implementación\nEstilos Vistas] starts 2022-09-14 and lasts 2 days
-[GIT] starts 2022-09-14 and lasts 3 days
 
-[Proyecto - Status 2] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 2] is 35% completed
+[GIT] starts 2022-09-08 and ends 2022-10-12 and is 15% completed
+[Documento #2] starts 2022-09-14 and ends 2022-09-23 and is 0% completed
+
+[Proyecto - Status 2] starts 2022-09-07 and ends 2022-10-12 and is 0% completed
 
 [Entrega #2] happens 2022-09-23
 
 --Sprint 3--
 then [Forms & API] Starts 2022-09-24 and ends 2022-10-05
+[Componentes] starts 2022-09-24 and lasts 2 days and is 0% completed
 note bottom
-<b>Componentes</b>
-** Documento
-** Esqueleto componentes
-<b>Formularios</b>
-** Formularios & Vinculos
-*** Mapa Navegabilidad
-** Renderizado
-<b>Simulación API</b>
-** Documento pruebas
-    solicitudes API
+** Definición
+** Esqueleto
 end note
-[Especificación Ruta] starts 2022-09-24 and lasts 2 days
-[Definición HTTP] starts 2022-09-24 and lasts 1 days
-[Lógica Algorítmica] starts 2022-09-24 and lasts 3 days
-[Documento Controladores] starts 2022-09-24 and lasts 2 days
-[Diagrama Relacional] starts 2022-09-24 and lasts 1 days
-[Diseño BD MongoDB] starts 2022-09-24 and lasts 3 days
-[Documento BD] starts 2022-09-24 and lasts 2 days
-[Validación Datos Entrada] starts 2022-09-24 and lasts 2 days
-[Prepared Statements] starts 2022-09-24 and lasts 2 days
-[Queries Consultar/Actualizar BD] starts 2022-09-24 and lasts 2 days
-[Documento Buenas Prácticas] starts 2022-09-24 and lasts 2 days
-[Creación Sesiones] starts 2022-09-24 and lasts 4 days
-[Funciones Hash para\nAlmacenar Contraseñas(salts)] starts 2022-09-24 and lasts 3 days
+[Formularios] starts 2022-09-24 and lasts 2 days and is 0% completed
+note bottom
+** Creación & Vinculos
+** Renderizado
+end note
+[Solicitudes API] starts 2022-09-24 and lasts 2 days and is 0% completed
+note bottom
+** Descripción pruebas API
+end note
+[Documento #3] starts 2022-09-24 and ends 2022-10-05 and is 0% completed
 
-[Proyecto - Status 3] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 3] is 80% completed
+[Proyecto - Status 3] starts 2022-09-07 and ends 2022-10-12 and is 0% completed
 
 [Entrega #3] happens 2022-10-05
 
 --Sprint 4--
 then [Back & Deploy] Starts 2022-10-06 and ends 2022-10-12
-note bottom
-<b>Base de Datos</b>
-    <b>No-Relacional</b>
-<b>Node.js</b>
-<b>Back-End</b>
-<b>Conectividad BD</b>
-<b>Despliegue Aplicación</b>
-** Requerimientos
-** Documentación
-** Verificación
-end note
 
-[Requerimientos Despliegue] starts 2022-10-06 and lasts 3 days
-[Documento Requerimientos &\nProceso Despliegue] starts 2022-10-06 and lasts 2 days
-[Despliegue(por Definir)] starts 2022-10-06 and lasts 2 days
-[Verificación Dominio\nhttps://mi_dominio] starts 2022-10-06 and lasts 2 days
-[Verificación App] starts 2022-10-06 and lasts 3 days
+[NoSQL DB] starts 2022-10-06 and lasts 3 days and is 0% completed
+[Node.js] starts 2022-10-06 and lasts 2 days and is 0% completed
+[Back-End] starts 2022-10-06 and lasts 2 days and is 0% completed
+[Conectividad DB] starts 2022-10-06 and lasts 2 days and is 0% completed
+[Requerimientos Despliegue] starts 2022-10-06 and lasts 3 days and is 0% completed
+[Despliegue] starts 2022-10-06 and lasts 3 days and is 0% completed
+[Documento Final] starts 2022-10-06 and ends 2022-10-12 and is 0% completed
 
-[Proyecto - Status 4] starts 2022-09-07 and ends 2022-10-12
-[Proyecto - Status 4] is 100% completed
+[Proyecto - Status 4] starts 2022-09-07 and ends 2022-10-12 and is 0% completed
 
 [Entrega Final] happens at [Back & Deploy]'s end
 
