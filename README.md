@@ -110,9 +110,11 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 **Diagrama 1** - _Diagrama de Despliegue del proyecto InstaYA_
 
-<!-- TODO NOTA Este es un ejemplo de como se importa una imagen local
-![Diagrama de Despliegue #2](assets-documento/despliegue-ejemplo.png "Ejemplo Diagrama Despliegue")
-**Diagrama 2** - _Descripción_ -->
+
+
+<!-- TODO NOTA Este es un ejemplo de como se importa una imagen local -->
+![Diagrama de Despliegue #2](assets-documento/diagrama-de-despliegue-2.png "Ejemplo Diagrama Despliegue")
+**Diagrama 2** - _Diagrama de Despliegue del proyecto InstaYa_
 
 [&#8592; Regresar](#tabla-de-contenido)
 
