@@ -96,10 +96,10 @@ sundays are closed and are colored White
 '2022-12-25 is colored in White
 
 
-2022-07-17 is colored in SteelBlue
-2022-07-28 is colored in SteelBlue
-2022-08-12 is colored in SteelBlue
-2022-08-17 is colored in SteelBlue
+2022-09-13 is colored in SteelBlue
+2022-09-23 is colored in SteelBlue
+2022-10-05 is colored in SteelBlue
+2022-10-12 is colored in SteelBlue
 
 
 Project starts 2022-09-07
@@ -134,12 +134,17 @@ then [Front-End] starts 2022-09-14 and ends 2022-09-23
 
 [Mapa Navegabilidad] starts 2022-09-14 and lasts 3 days and is 0% completed
 [Mockups] starts 2022-09-14 and lasts 3 days and is 0% completed
-then [Front-End React] starts 2022-09-14 and lasts 2 days and is 0% completed
-then [Plantilla Bootstrap] starts 2022-09-14 and lasts 2 days and is 0% completed
-note bottom
-** Selección
-** Implementación
-end note
+[Front-End React] starts at [Mockups]'s end and lasts 6 days and is 0% completed
+[Vista Login] starts 2022-09-17 and lasts 2 days and is 0% completed
+[Vista Registro Usuario] starts 2022-09-17 and lasts 2 days and is 0% completed
+[Vista Lista Órdenes] starts 2022-09-17 and lasts 2 days and is 0% completed
+[Vista Gestión Órdenes] starts 2022-09-17 and lasts 2 days and is 0% completed
+[Vista Actualización Órdenes] starts 2022-09-17 and lasts 2 days and is 0% completed
+[Vista Registro Órdenes] starts 2022-09-17 and lasts 2 days and is 0% completed
+
+[Plantilla Bootstrap] starts at [Mockups]'s end and lasts 2 days and is 0% completed
+
+
 
 [GIT] starts 2022-09-08 and ends 2022-10-12 and is 15% completed
 [Documento #2] starts 2022-09-14 and ends 2022-09-23 and is 0% completed
@@ -150,17 +155,20 @@ end note
 
 --Sprint 3--
 then [Forms & API] Starts 2022-09-24 and ends 2022-10-05
-[Componentes] starts 2022-09-24 and lasts 2 days and is 0% completed
+[Componentes] starts 2022-09-24 and lasts 10 days and is 0% completed
 note bottom
 ** Definición
 ** Esqueleto
 end note
-[Formularios] starts 2022-09-24 and lasts 2 days and is 0% completed
+
+[Formularios] starts 2022-09-24 and lasts 10 days and is 0% completed
 note bottom
 ** Creación & Vinculos
 ** Renderizado
 end note
-[Solicitudes API] starts 2022-09-24 and lasts 2 days and is 0% completed
+[Registro Usuario] starts 2022-09-24 and lasts 3 days and is 0% completed
+[Registro Órdenes] starts 2022-09-24 and lasts 3 days and is 0% completed
+[Solicitudes API] starts 2022-09-24 and lasts 10 days and is 0% completed
 note bottom
 ** Descripción pruebas API
 end note
@@ -173,10 +181,12 @@ end note
 --Sprint 4--
 then [Back & Deploy] Starts 2022-10-06 and ends 2022-10-12
 
-[NoSQL DB] starts 2022-10-06 and lasts 3 days and is 0% completed
+[NoSQL DB(MongoDB)] starts 2022-10-06 and lasts 3 days and is 0% completed
+[DB Usuarios] starts 2022-10-06 and lasts 3 days and is 0% completed
+[DB Órdenes] starts 2022-10-06 and lasts 3 days and is 0% completed
 [Node.js] starts 2022-10-06 and lasts 2 days and is 0% completed
 [Back-End] starts 2022-10-06 and lasts 2 days and is 0% completed
-[Conectividad DB] starts 2022-10-06 and lasts 2 days and is 0% completed
+[Conectividad DB] starts at [NoSQL DB(MongoDB)]'s end and lasts 2 days and is 0% completed
 [Requerimientos Despliegue] starts 2022-10-06 and lasts 3 days and is 0% completed
 [Despliegue] starts 2022-10-06 and lasts 3 days and is 0% completed
 [Documento Final] starts 2022-10-06 and ends 2022-10-12 and is 0% completed
@@ -190,6 +200,7 @@ then [Back & Deploy] Starts 2022-10-06 and ends 2022-10-12
 [Forms & API] is colored in salmon/Red
 [Back & Deploy] is colored in LightBlue/Blue
 [Entrega Final] is colored in LightGreen/Green
+[Entrega #1] is colored in LightGreen/Green
 
 
 @enduml

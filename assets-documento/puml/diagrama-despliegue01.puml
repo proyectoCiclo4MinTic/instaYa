@@ -1,4 +1,16 @@
 @startuml
+<style>
+title{
+	FontName JetBrains Mono
+	FontStyle Bold
+	FontSize 14
+}
+componentDiagram{
+	FontName JetBrains Mono
+	FontSize 12
+}
+
+</style>
 
 ' !include https://raw.githubusercontent.com/ptrkcsk/one-dark-plantuml-theme/v1.0.0/theme.puml
 
