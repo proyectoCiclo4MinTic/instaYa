@@ -33,10 +33,10 @@ Equipo No. **06**
   - [Definición de Artefactos - Product Backlog](#definición-de-artefactos---product-backlog)
     - [Método de Estimación Fibonacci](#método-de-estimación-fibonacci)
     - [Product Backlog](#product-backlog)
-    - [Sprint Backlog - Entrega #1 - Planificación](#sprint-backlog---entrega-1---planificación)
-    - [Sprint Backlog - Entrega #2 - Diseño](#sprint-backlog---entrega-2---diseño)
-    - [Sprint Backlog - Entrega #3 - Desarrollo Front-End](#sprint-backlog---entrega-3---desarrollo-front-end)
-    - [Sprint Backlog - Entrega #4](#sprint-backlog---entrega-4)
+    - [Sprint Backlog Entrega 1. Planificación](#sprint-backlog-entrega-1-planificación)
+    - [Sprint Backlog Entrega 2. Diseño](#sprint-backlog-entrega-2-diseño)
+    - [Sprint Backlog Entrega 3. Desarrollo Front-End](#sprint-backlog-entrega-3-desarrollo-front-end)
+    - [Sprint Backlog Entrega 4. Desarrollo Back-End](#sprint-backlog-entrega-4-desarrollo-back-end)
   - [Cronograma de Proyecto](#cronograma-de-proyecto)
 
 ---
@@ -159,7 +159,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 <div style="page-break-after: always"></div>
 
-### Sprint Backlog - Entrega #1 - Planificación
+### Sprint Backlog Entrega 1. Planificación
 
 <!-- prettier-ignore -->
 | Id   | Nombre                   | Descripción                                                                                           | Estimación    | Responsable                     |
@@ -169,11 +169,13 @@ Deben tener en cuenta las siguientes funcionalidades:
 | P-03 | Definición de artefactos | <ul><li>Backlog del producto<li>Backlog por sprint<li>Asignación de backlogs a cada rol definido</ul> | 2 **Pequeño** | Product Owner<br>& Team         |
 | P-04 | Definición Cronograma    | Definir fechas para cada una de las actividades definidas                                             | 2 **Pequeño** | Scrum Master<br>& Product Owner |
 
+**Tabla 4** - Sprint Backlog - Entrega #2 - Planificación
+
 [&#8592; Regresar](#tabla-de-contenido)
 
 <div style="page-break-after: always"></div>
 
-### Sprint Backlog - Entrega #2 - Diseño
+### Sprint Backlog Entrega 2. Diseño
 
 <!-- prettier-ignore -->
 | Id  | User Story | Descripción | Estimación | Responsable |
@@ -184,13 +186,13 @@ Deben tener en cuenta las siguientes funcionalidades:
 | D-04  | Cómo **cliente quiero** hacer seguimiento a mis pedidos y ver el listado de los mismos con el estado actual del envío **para asegurarme** que los pedidos se estén entregando según los requerimientos (ejemplo: máximo en **24 horas**)                                                     | Creación de la vista del resumen de los pedidos donde se pueda observar todo el listado de pedidos según su estado. Al seleccionar en un pedido debe dirigir a la ventana para ver/actualizar la información según su estado. Si ya fue cumplido o cancelado no se pueden modificar datos.<ul><li>BD Actualización & Registro Listado Ordenes</li><ul><li>Código de Seguimiento</li><li>Estado Envio</li><ul><li>Guardado</li><li>Cancelado</li><li>Cumplido                                                                                                  | 3 **Promedio** | front-End<ul><li>AngelDM<br>DanielaOR</ul>                                                                                       |
 | D-05  | Cómo **cliente quiero** actualizar los datos de mis órdenes realizadas con anterioridad **para poder** gestionarlas en caso de que algún dato haya cambiado o se haya digitado erróneamente.                                                                                                 | Creación de la ventana de actualización de pedido donde se pueda ver y/o modificar algún dato del pedido o cancelar el mismo. Esto sólo se podrá realizar en pedidos que aún no se hayan cumplido ni cancelado. Una vez Se guarden los datos, el frontend los almacenará para enviarlos al backend.<ul><li>Gestión de envíos/paquetes<ul><li>Actualización del paquete</li><li>Actualización datos Remitente</li><li>Actualización datos Destinatario</li></ul></ul>                                                                                          | 3 **Promedio** | front-End<ul><li>AngelDM<br>DanielaOR</ul>                                                                                       |
 
-**Tabla 4** - Sprint Backlog - Entrega #2
+**Tabla 5** - Sprint Backlog - Entrega #2 - Diseño
 
 [&#8592; Regresar](#tabla-de-contenido)
 
 <div style="page-break-after: always"></div>
 
-### Sprint Backlog - Entrega #3 - Desarrollo Front-End
+### Sprint Backlog Entrega 3. Desarrollo Front-End
 
 <!-- prettier-ignore -->
 | Id  | User Story | Descripción | Estimación | Responsable |
@@ -201,13 +203,13 @@ Deben tener en cuenta las siguientes funcionalidades:
 | DF-04  | Cómo **cliente quiero** hacer seguimiento a mis pedidos y ver el listado de los mismos con el estado actual del envío **para asegurarme** que los pedidos se estén entregando según los requerimientos (ejemplo: máximo en **24 horas**)                                                     | Creación del API Rest Get para obtener el listado de envíos que un usuario tiene en la BD, conexión con la BD y devolver al front-end para que muestren en pantalla los resultados. <ul><li>BD Actualización & Registro Listado Ordenes</li><ul><li>Código de Seguimiento</li><li>Estado Envio</li><ul><li>Guardado</li><li>Cancelado</li><li>Cumplido                                                                                                                                                                                                                            | 3 **Promedio** | Full-Stack<ul><li>JesúsVA</ul> front-End<ul><li>AngelDM<br>DanielaOR</ul> back-End<ul><li>DaritzaTV<br>JavierTV</ul> |
 | DF-05  | Cómo **cliente quiero** actualizar los datos de mis órdenes realizadas con anterioridad **para poder** gestionarlas en caso de que algún dato haya cambiado o se haya digitado erróneamente.                                                                                                 | Creación del API Rest put o post para actualización de la información del envío, conexión con BD y envío al front-end del éxito de la operación. <ul><li>Gestión de envíos/paquetes<ul><li>Actualización del paquete</li><li>Actualización datos Remitente</li><li>Actualización datos Destinatario</li></ul></ul>                                                                                                                                                                                                                                                                | 5 **Grande**   | Full-Stack<ul><li>JesúsVA</ul> front-End<ul><li>AngelDM<br>DanielaOR</ul> back-End<ul><li>DaritzaTV<br>JavierTV</ul> |
 
-**Tabla 5** - Sprint Backlog - Entrega #3 - Desarrollo Back-End
+**Tabla 6** - Sprint Backlog - Entrega #3 - Desarrollo Front-End
 
 [&#8592; Regresar](#tabla-de-contenido)
 
 <div style="page-break-after: always"></div>
 
-### Sprint Backlog - Entrega #4
+### Sprint Backlog Entrega 4. Desarrollo Back-End
 
 <!-- prettier-ignore -->
 | Id  | User Story | Descripción | Estimación | Responsable |
@@ -218,7 +220,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 | 04  | Cómo **cliente quiero** hacer seguimiento a mis pedidos y ver el listado de los mismos con el estado actual del envío **para asegurarme** que los pedidos se estén entregando según los requerimientos (ejemplo: máximo en **24 horas**)                                                     | Testing al método get utilizado, la conexión con la BD y que los pedidos que se muestren en la ventana pertenezcan al usuario indicado y que su estado y datos obtenidos sean los correctos. <ul><li>BD Actualización & Registro Listado Ordenes</li><ul><li>Código de Seguimiento</li><li>Estado Envio</li><ul><li>Guardado</li><li>Cancelado</li><li>Cumplido                                                                                                                                                      | 3 **Promedio** | QA-QC<ul>JesúsVA<li>DaritzaTV<br>JavierTV</ul> |
 | DB-05  | Cómo **cliente quiero** actualizar los datos de mis órdenes realizadas con anterioridad **para poder** gestionarlas en caso de que algún dato haya cambiado o se haya digitado erróneamente.                                                                                                 | Realizar las diferentes pruebas de testing sobre los métodos para la obtención de info (get) y de actualización (put o post) de la información. Se debe realizar la prueba que efectivamente la información seea actualizada. <ul><li>Gestión de envíos/paquetes<ul><li>Actualización del paquete</li><li>Actualización datos Remitente</li><li>Actualización datos Destinatario</li></ul></ul>                                                                                                                      | 5 **Grande**   | QA-QC<ul>JesúsVA<li>DaritzaTV<br>JavierTV</ul> |
 
-**Tabla 6** - Sprint Backlog - Entrega #4
+**Tabla 7** - Sprint Backlog - Entrega #4 - Desarrollo Back-End
 
 [&#8592; Regresar](#tabla-de-contenido)
 
