@@ -27,14 +27,14 @@ actor "Usuario"
 node "Dispositivo Cliente" <<device - Windows, Linux, Mac, IOS, Android>> {
 
     node Navegador <<Aplicación>> {
-        artifact Bootstrap <<artifact>>
-        artifact React.js <<artifact>>
     }
 
 }
 
 node "Servidor Web" <<device>> {
     node "Aplicación" <<React.js>> {
+        artifact Bootstrap <<artifact>>
+        artifact React.js <<artifact>>
         ' [Login]
         ' [Registro]
         ' [Listado Órdenes]
@@ -65,7 +65,7 @@ node "Servidor BD" <<device>> {
 ' node "ISP"
 
 
-[Usuario] <-> Navegador : UI
+[Usuario] <--> Navegador : UI
 ' Navegador <--> ISP : HTTP/HTTPS
 ' ISP <--> [Servidor HTTP] : HTTP/HTTPS
 Navegador <--> [Servidor HTTP] : HTTP/HTTPS
