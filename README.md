@@ -36,7 +36,7 @@ Equipo No. **06**
     - [Backlog Sprint #2](#backlog-sprint-2)
     - [Backlog Sprint #3](#backlog-sprint-3)
     - [Backlog Sprint #4](#backlog-sprint-4)
-  - [Cronograma de Tareas](#cronograma-de-tareas)
+  - [Cronograma de Proyecto](#cronograma-de-proyecto)
 
 ---
 
@@ -203,12 +203,12 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 <div style="page-break-after: always"></div>
 
-## Cronograma de Tareas
+## Cronograma de Proyecto
 
 <!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
 <!-- https://plantuml.com/gantt-diagram -->
 
-![Diagrama de Despliegue #2](assets-documento/cronograma-tareas.svg "Ejemplo Diagrama Despliegue")
+![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto](assets-documento/cronograma-tareas.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto")
 
 **Diagrama 2** - _Diagrama Gantt - Cronograma/Rúbrica General del Proyecto_
 
