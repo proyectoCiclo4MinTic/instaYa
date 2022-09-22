@@ -19,6 +19,7 @@ Equipo No. **06**
 <!-- • Luis Sebastian Caicedo Pimienta -->
 
 ---
+<div style="page-break-after: always"></div>
 
 ## Tabla de Contenido
 
@@ -37,7 +38,12 @@ Equipo No. **06**
     - [Sprint Backlog Entrega 2. Diseño](#sprint-backlog-entrega-2-diseño)
     - [Sprint Backlog Entrega 3. Desarrollo Front-End](#sprint-backlog-entrega-3-desarrollo-front-end)
     - [Sprint Backlog Entrega 4. Desarrollo Back-End](#sprint-backlog-entrega-4-desarrollo-back-end)
-  - [Cronograma de Proyecto](#cronograma-de-proyecto)
+  - [Cronograma de Proyecto - Sprint 1](#cronograma-de-proyecto---sprint-1)
+  - [Cronograma de Proyecto - Sprint 2](#cronograma-de-proyecto---sprint-2)
+  - [Mockups](#mockups)
+  - [Mapa de Navegabilidad](#mapa-de-navegabilidad)
+  - [Plantilla Bootstrap](#plantilla-bootstrap)
+  - [Creación proyecto en Git](#creación-proyecto-en-git)
 
 ---
 
@@ -226,14 +232,84 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 <div style="page-break-after: always"></div>
 
-## Cronograma de Proyecto
+## Cronograma de Proyecto - Sprint 1
 
 <!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
 <!-- https://plantuml.com/gantt-diagram -->
 
-![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto](assets-documento/cronograma-tareas.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto")
+![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto](assets-documento/img/cronograma/cronograma-tareas.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto")
 
 **Diagrama 3** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto_
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
+## Cronograma de Proyecto - Sprint 2
+
+<!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
+<!-- https://plantuml.com/gantt-diagram -->
+
+![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2](assets-documento/img/cronograma/cronograma-tareasSprint2.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2")
+
+**Diagrama 4** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 2_
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
+## Mockups
+
+![Mockups Figma](assets-documento/img/mock/screenshot-figma01.png "Mockups Figma")
+**Imagen 1** - _Diseño de mockups trabajado en la plataforma Figma_
+
+![Vista Loading](assets-documento/img/mock/mock-loading.png "Vista Loading")
+**Imagen 2** - _Vista Mockup Loading_
+
+![Vista Login](assets-documento/img/mock/mock-login.png "Vista Login")
+**Imagen 3** - _Vista Mockup Login_
+
+![Vista Menu](assets-documento/img/mock/mock-menu.png "Vista Menu")
+**Imagen 4** - _Vista Mockup Menu_
+
+![Vista Registro](assets-documento/img/mock/mock-registrousuario.png "Vista Registro")
+**Imagen 5** - _Vista Mockup Registro_
+
+![Vista Órdenes](assets-documento/img/mock/mock-ordenes.png "Vista Órdenes")
+**Imagen 6** - _Vista Mockup Órdenes_
+
+![Vista Actualizar Orden](assets-documento/img/mock/mock-actualizarorden.png "Vista Orden")
+**Imagen 7** - _Vista Mockup Actualizar Orden_
+
+![Vista Registro Orden](assets-documento/img/mock/mock-registroorden.png "Vista Registro Orden")
+**Imagen 8** - _Vista Mockup Registro Orden_
+
+![Vista Modal](assets-documento/img/mock/mock-modal.png "Vista Modal")
+**Imagen 9** - _Vista Mockup Modales_
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
+## Mapa de Navegabilidad
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
+## Plantilla Bootstrap
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
+## Creación proyecto en Git
+
+<a href = https://github.com/proyectoCiclo4MinTic/instaYa.git>
+<img src="assets-documento/img/other/Octocat.png" alt="Logo Octocat Github" height= "100px" width="">
+</a>
+
+***https://github.com/proyectoCiclo4MinTic/instaYa.git***
 
 [Regresar &#8617;](#tabla-de-contenido)
 
