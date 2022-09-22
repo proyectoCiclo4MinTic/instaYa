@@ -19,6 +19,7 @@ Equipo No. **06**
 <!-- • Luis Sebastian Caicedo Pimienta -->
 
 ---
+
 <div style="page-break-after: always"></div>
 
 ## Tabla de Contenido
