@@ -48,6 +48,7 @@ Equipo No. **06**
     - [Import](#import)
   - [Creación proyecto en Git](#creación-proyecto-en-git)
     - [Github](#github)
+  - [Requerimientos de Ejecución](#requerimientos-de-ejecución)
 
 ---
 
@@ -297,7 +298,8 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 ## Mapa de Navegabilidad
 
-![Mapa de Navegabilidad plataforma instaYa](assets-documento/img/diagramas/navegabilidad.png "Mapa de Navegabilidad plataforma instaYa")
+<img title="Mapa de Navegabilidad plataforma instaYa" src="assets-documento/img/diagramas/navegabilidad.png" alt="Mapa de Navegabilidad plataforma instaYa" height= "90%" width="90%">
+
 **Imagen 10** - _Mapa de Navegabilidad plataforma instaYa_
 
 [Regresar &#8617;](#tabla-de-contenido)
@@ -330,6 +332,17 @@ bootstrap/dist/css/bootstrap.min.css
 </a>
 
 ***https://github.com/proyectoCiclo4MinTic/instaYa.git***
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+## Requerimientos de Ejecución
+
+```
+nodejs
+create-react-app
+react-bootstrap
+bootstrap
+```
 
 [Regresar &#8617;](#tabla-de-contenido)
 
