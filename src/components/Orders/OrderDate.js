@@ -1,6 +1,6 @@
 import "./OrderDate.css";
 
-function OrderDate(props) {
+const OrderDate = (props) => {
   const day = props.date.toLocaleString("es-CO", { day: "2-digit" });
   const month = props.date.toLocaleString("es-CO", { month: "long" });
   const year = props.date.getFullYear();
@@ -11,6 +11,6 @@ function OrderDate(props) {
       <div className="order-date__year">{year}</div>
     </div>
   );
-}
+};
 
 export default OrderDate;

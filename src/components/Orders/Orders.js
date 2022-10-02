@@ -2,9 +2,10 @@ import OrderItem from "./OrderItem";
 import Card from "../UI/Card";
 import "./Orders.css";
 
-function Orders(props) {
+const Orders = (props) => {
   return (
     <Card className="orders">
+      <button className="orders__button-create">Crear Orden</button>
       <OrderItem
         id={props.items[0].id}
         date={props.items[0].date}
@@ -42,5 +43,5 @@ function Orders(props) {
       />
     </Card>
   );
-}
+};
 export default Orders;

@@ -1,6 +1,6 @@
 import "./OrderDestination.css";
 
-function OrderDestination(props) {
+const OrderDestination = (props) => {
   const address = props.address;
   const city = props.city;
   return (
@@ -9,5 +9,5 @@ function OrderDestination(props) {
       <div className="order-item__city">{city}</div>
     </div>
   );
-}
+};
 export default OrderDestination;

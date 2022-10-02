@@ -6,6 +6,8 @@ import LoginItem from "./components/Login/LoginItem";
 import RegisterUserItem from "./components/Register/RegisterUserItem";
 import OrderItem from "./components/Orders/OrderItem";
 import Orders from "./components/Orders/Orders";
+import OrderUpdate from "./components/Orders/OrderUpdate.js";
+import OrderRegister from "./components/Orders/OrderRegister.js";
 
 // React Bootstrap
 // import { Form, Button, Row, Col } from "react-bootstrap";
@@ -55,6 +57,8 @@ function App() {
       <LoginItem></LoginItem>
       <RegisterUserItem></RegisterUserItem>
       <Orders items={orders}></Orders>
+      <OrderUpdate></OrderUpdate>
+      <OrderRegister></OrderRegister>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import "./OrderStatus.css";
 
-function OrderStatus(props) {
+const OrderStatus = (props) => {
   const status = props.status;
   if (status === "Cumplido") {
     return (
@@ -25,6 +25,6 @@ function OrderStatus(props) {
       </div>
     );
   }
-}
+};
 
 export default OrderStatus;

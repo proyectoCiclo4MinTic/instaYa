@@ -4,7 +4,7 @@ import OrderDestination from "./OrderDestination";
 import OrderStatus from "./OrderStatus";
 import "./OrderItem.css";
 
-function OrderItem(props) {
+const OrderItem = (props) => {
   return (
     // <Card className="order-item">
     <div className="order-item">
@@ -15,6 +15,6 @@ function OrderItem(props) {
     </div>
     // </Card>
   );
-}
+};
 
 export default OrderItem;
