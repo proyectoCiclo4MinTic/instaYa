@@ -6,8 +6,8 @@ import LoginItem from "./components/Login/LoginItem";
 import RegisterUserItem from "./components/Register/RegisterUserItem";
 import OrderItem from "./components/Orders/OrderItem";
 import Orders from "./components/Orders/Orders";
-import OrderUpdate from "./components/Orders/OrderUpdate.js";
-import OrderRegister from "./components/Orders/OrderRegister.js";
+import OrderUpdate from "./components/OrderUpdate/OrderUpdate.js";
+import OrderRegister from "./components/OrderRegister/OrderRegister.js";
 
 // React Bootstrap
 // import { Form, Button, Row, Col } from "react-bootstrap";

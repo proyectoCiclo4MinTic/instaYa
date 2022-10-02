@@ -1,16 +1,36 @@
 import "./OrderUpdate.css";
 import { logo, password, user } from "../../index.js";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import Card from "../UI/Card";
 
 const OrderUpdate = () => {
   return (
-    <div>
+    <div className="order-update">
+      <h2>Actualización de Órdenes</h2>
+
       <Form className="register-user-item__register">
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
+          <Col sm={3}>
+            <Form.Control type="date"></Form.Control>
+          </Col>
+        </Form.Group>
+        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={3}>
+            <Form.Control type="time" min="08:00" max="17:00"></Form.Control>
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+          <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Largo"></Form.Control>
           </Col>
         </Form.Group>
@@ -18,7 +38,7 @@ const OrderUpdate = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Ancho"></Form.Control>
           </Col>
         </Form.Group>
@@ -26,7 +46,7 @@ const OrderUpdate = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Alto"></Form.Control>
           </Col>
         </Form.Group>
@@ -34,7 +54,7 @@ const OrderUpdate = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Peso"></Form.Control>
           </Col>
         </Form.Group>

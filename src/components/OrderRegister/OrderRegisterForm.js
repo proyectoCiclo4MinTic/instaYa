@@ -1,8 +1,8 @@
-import { logo, password, user } from "../../index.js";
+import "./OrderRegisterForm.css";
 import { Form, Button, Row, Col } from "react-bootstrap";
-import "./OrderRegister.css";
+import { logo, password, user } from "../../index.js";
 
-const OrderRegister = () => {
+const OrderRegisterForm = () => {
   return (
     <div>
       <Form className="register-user-item__register">
@@ -10,7 +10,24 @@ const OrderRegister = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
+          <Col sm={3}>
+            <Form.Control type="date"></Form.Control>
+          </Col>
+        </Form.Group>
+        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={3}>
+            <Form.Control type="time" min="08:00" max="17:00"></Form.Control>
+          </Col>
+        </Form.Group>
+
+        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+          <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Largo"></Form.Control>
           </Col>
         </Form.Group>
@@ -18,7 +35,7 @@ const OrderRegister = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Ancho"></Form.Control>
           </Col>
         </Form.Group>
@@ -26,7 +43,7 @@ const OrderRegister = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Alto"></Form.Control>
           </Col>
         </Form.Group>
@@ -34,7 +51,7 @@ const OrderRegister = () => {
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
-          <Col sm={1}>
+          <Col sm={2}>
             <Form.Control type="text" placeholder="Peso"></Form.Control>
           </Col>
         </Form.Group>
@@ -112,8 +129,8 @@ const OrderRegister = () => {
           </Col>
         </Form.Group>
       </Form>
+      ;
     </div>
   );
 };
-
-export default OrderRegister;
+export default OrderRegisterForm;

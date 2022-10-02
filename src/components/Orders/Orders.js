@@ -1,11 +1,22 @@
 import OrderItem from "./OrderItem";
 import Card from "../UI/Card";
 import "./Orders.css";
+import Button from "react-bootstrap/Button";
 
 const Orders = (props) => {
+  const createOrderHandler = () => {
+    console.log("Click Crear Orden");
+  };
   return (
-    <Card className="orders">
-      <button className="orders__button-create">Crear Orden</button>
+    <div className="orders">
+      <h2>Listado de Órdenes</h2>
+      <Button
+        variant="link"
+        className="orders__button-create"
+        onClick={createOrderHandler}
+      >
+        Crear Orden
+      </Button>
       <OrderItem
         id={props.items[0].id}
         date={props.items[0].date}
@@ -41,7 +52,7 @@ const Orders = (props) => {
         address={props.items[4].address}
         status={props.items[4].status}
       />
-    </Card>
+    </div>
   );
 };
 export default Orders;
