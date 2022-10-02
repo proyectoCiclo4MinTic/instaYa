@@ -1,5 +1,5 @@
 import "./LoginItem.css";
-import { logo, password, user } from "../index.js";
+import { logo, password, user } from "../../index.js";
 import { Form, Button, Row, Col } from "react-bootstrap";
 
 function LoginItem() {

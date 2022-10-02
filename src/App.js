@@ -2,10 +2,10 @@
 import { logo, password, user } from "./index.js";
 
 import "./App.css";
-import LoginItem from "./components/LoginItem";
-import RegisterUserItem from "./components/RegisterUserItem";
-import OrderItem from "./components/OrderItem";
-import Orders from "./components/Orders";
+import LoginItem from "./components/Login/LoginItem";
+import RegisterUserItem from "./components/Register/RegisterUserItem";
+import OrderItem from "./components/Orders/OrderItem";
+import Orders from "./components/Orders/Orders";
 
 // React Bootstrap
 // import { Form, Button, Row, Col } from "react-bootstrap";

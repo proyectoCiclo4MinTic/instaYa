@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../UI/Card";
 import OrderDate from "./OrderDate";
 import OrderDestination from "./OrderDestination";
 import OrderStatus from "./OrderStatus";

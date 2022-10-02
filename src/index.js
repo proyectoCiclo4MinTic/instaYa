@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import logo from "./img/InstayaLogoWhite.svg";
+import logo from "./img/logo/InstayaLogoWhite.svg";
 import password from "./img/password.png";
 import user from "./img/user.png";
 
