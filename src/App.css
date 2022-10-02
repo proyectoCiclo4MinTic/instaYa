@@ -1,21 +1,5 @@
-.loginApp {
-    background-color: #F84601;
-    min-height: 100vh;
-    min-width: 480px;
-    flex-direction: column;
+.App-logo {
+  /* height: 40vmin; */
+  /* height: 4rem; */
+  /* pointer-events: none; */
 }
-
-.login {
-    display: flex;
-    background-color: #F84601;
-    min-width: 480px;
-    min-height: 25vh;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-.login button{
-    width: 225px;
-}
-
-

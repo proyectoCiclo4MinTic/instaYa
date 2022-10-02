@@ -1,46 +1,62 @@
-// import logo from './logo.svg';
-import {logo, password, user} from './index.js';
+// import logo from "./logo.svg";
+import { logo, password, user } from "./index.js";
 
-import './App.css';
+import "./App.css";
+import LoginItem from "./components/LoginItem";
+import RegisterUserItem from "./components/RegisterUserItem";
+import OrderItem from "./components/OrderItem";
+import Orders from "./components/Orders";
 
 // React Bootstrap
-import { Form, Button, Row, Col} from "react-bootstrap"
-
+// import { Form, Button, Row, Col } from "react-bootstrap";
 function App() {
-    return ( 
-        <div className="loginApp d-flex justify-content-center align-items-center">
-            <header> 
-                <img src={logo} alt="Logo"></img>
-            </header>
-            <Form className='login'>
-                <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-                    <Col sm={1}>
-                        <img src={user} alt="Logo"></img>
-                    </Col>
-                    <Col sm={10}>
-                        <Form.Control type="email" placeholder="Email" />
-                    </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
-                    <Col sm={1}>
-                        <img src={password} alt="Logo"></img>
-                    </Col>
-                    <Col sm={10}>
-                    <Form.Control type="password" placeholder="Password" />
-                    </Col>
-                </Form.Group>
-
-                <Form.Group as={Row} className="mb-3">
-                    <Col sm={{ span: 10, offset: 5 }}>
-                        <Button variant='outline-light'type='submit'>
-                            Sign in
-                        </Button>
-                    </Col>
-                </Form.Group>
-        </Form>
+  const orders = [
+    {
+      id: "1",
+      date: new Date("2022,02 ,16"),
+      city: "Barranquilla",
+      address: "cra 01 no 23-45",
+      status: "Cumplido",
+    },
+    {
+      id: "2",
+      date: new Date("2022,05,08"),
+      city: "Cali",
+      address: "cra 01 no 23-45",
+      status: "Cumplido",
+    },
+    {
+      id: "3",
+      date: new Date("2022,07,16"),
+      city: "Bogotá",
+      address: "cra 01 no 23-45",
+      status: "Cancelado",
+    },
+    {
+      id: "4",
+      date: new Date("2022,08,24"),
+      city: "Cartagena",
+      address: "cra 01 no 23-45",
+      status: "Guardado",
+    },
+    {
+      id: "5",
+      date: new Date("2022,08,27"),
+      city: "Bucaramanga",
+      address: "cra 01 no 23-45",
+      status: "Guardado",
+    },
+  ];
+  return (
+    <div className="App">
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      </header> */}
+      <LoginItem></LoginItem>
+      <RegisterUserItem></RegisterUserItem>
+      <Orders items={orders}></Orders>
     </div>
-    );
+  );
 }
 
 export default App;

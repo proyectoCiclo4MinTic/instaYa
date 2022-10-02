@@ -1,21 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import "bootstrap/dist/css/bootstrap.min.css"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import logo from './img/logo.png';
-import password from './img/password.png';
-import user from './img/user.png';
+import logo from "./img/InstayaLogoWhite.svg";
+import password from "./img/password.png";
+import user from "./img/user.png";
 
-export {
-  logo,
-  password,
-  user
-};
+export { logo, password, user };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
