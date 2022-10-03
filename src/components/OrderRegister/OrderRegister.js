@@ -13,7 +13,7 @@ const OrderRegister = (props) => {
     const orderData = {
       ...enteredOrderData,
       // id: Math.random().toString(), // TODO Random Id generating. Needs another method
-      id: getRandomInt(1, 100),
+      id: getRandomInt(10, 999),
       status: "Guardado",
     };
     // console.log(orderData); // TODO Testing Only

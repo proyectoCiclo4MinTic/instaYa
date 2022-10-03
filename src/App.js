@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 // import logo from "./logo.svg";
 import { logo, password, user } from "./index.js";
 
 import "./App.css";
+
+import Header from "./components/Layout/Header";
 import LoginItem from "./components/Login/LoginItem";
 import RegisterUserItem from "./components/Register/RegisterUserItem";
 import OrderItem from "./components/Orders/OrderItem";
@@ -64,6 +66,9 @@ function App() {
     <div className="App">
       <LoginItem />
       <RegisterUserItem />
+      <Fragment>
+        <Header />
+      </Fragment>
       <Orders items={orders} />
       <OrderUpdate />
       <OrderRegister onAddOrder={addOrderHandler} />

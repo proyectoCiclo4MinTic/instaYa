@@ -3,12 +3,13 @@ import OrderDate from "./OrderDate";
 import OrderDestination from "./OrderDestination";
 import OrderStatus from "./OrderStatus";
 import "./OrderItem.css";
+import { Button } from "react-bootstrap";
 
 const OrderItem = (props) => {
   return (
     // <Card className="order-item">
     <div className="order-item">
-      <div className="order-item__id">{props.id}</div>
+      <Button className="order-item__id">{props.id}</Button>
       <OrderDate date={props.date} />
       <OrderDestination
         recipientAddress={props.recipientAddress}
