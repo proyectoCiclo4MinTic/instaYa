@@ -17,7 +17,18 @@ const Orders = (props) => {
       >
         Crear Orden
       </Button>
-      <OrderItem
+
+      {props.items.map((order) => (
+        <OrderItem
+          key={order.id}
+          id={order.id}
+          date={order.date}
+          recipientCity={order.recipientCity}
+          recipientAddress={order.recipientAddress}
+          status={order.status}
+        />
+      ))}
+      {/* <OrderItem
         id={props.items[0].id}
         date={props.items[0].date}
         city={props.items[0].city}
@@ -51,7 +62,7 @@ const Orders = (props) => {
         city={props.items[4].city}
         address={props.items[4].address}
         status={props.items[4].status}
-      />
+      /> */}
     </div>
   );
 };

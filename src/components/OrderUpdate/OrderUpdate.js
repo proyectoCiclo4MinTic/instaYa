@@ -8,8 +8,12 @@ const OrderUpdate = () => {
     <div className="order-update">
       <h2>Actualización de Órdenes</h2>
 
-      <Form className="register-user-item__register">
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+      <Form className="order-update-form register-user-item__register">
+        <Form.Group
+          as={Row}
+          className="order-update-form__date mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -17,7 +21,11 @@ const OrderUpdate = () => {
             <Form.Control type="date"></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__time mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -25,40 +33,95 @@ const OrderUpdate = () => {
             <Form.Control type="time" min="08:00" max="17:00"></Form.Control>
           </Col>
         </Form.Group>
+        <Form.Group
+          as={Row}
+          className="order-update-form__status mb-3"
+          controlId=""
+        >
+          <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={3}>
+            <Form.Select aria-label="Default select example">
+              <option>Estado</option>
+              <option value="1">Guardado</option>
+              <option value="2">Cumplido</option>
+              <option value="3">Cancelado</option>
+            </Form.Select>
+          </Col>
+        </Form.Group>
 
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__length mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={2}>
-            <Form.Control type="text" placeholder="Largo"></Form.Control>
+            <Form.Control type="number" placeholder="Largo cm"></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__width mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={2}>
-            <Form.Control type="text" placeholder="Ancho"></Form.Control>
+            <Form.Control type="number" placeholder="Ancho cm"></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__height mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={2}>
-            <Form.Control type="text" placeholder="Alto"></Form.Control>
+            <Form.Control type="number" placeholder="Alto cm"></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__weight mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={2}>
-            <Form.Control type="text" placeholder="Peso"></Form.Control>
+            <Form.Control type="number" placeholder="Peso grs"></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+
+        <Form.Group
+          as={Row}
+          className="order-update-form__delicate mb-3"
+          controlId=""
+        >
+          <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={3}>
+            <Form.Select aria-label="Default select example">
+              <option>Delicado/No Delicado</option>
+              <option value="1">Delicado</option>
+              <option value="2">No Delicado</option>
+            </Form.Select>
+          </Col>
+        </Form.Group>
+
+        <Form.Group
+          as={Row}
+          className="order-update-form__sender-address mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -69,7 +132,11 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__sender-city mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -80,7 +147,11 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__recipient-name mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -91,7 +162,11 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__recipient-id mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -102,7 +177,11 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__recipient-address mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -113,7 +192,11 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+        <Form.Group
+          as={Row}
+          className="order-update-form__recipient-city mb-3"
+          controlId=""
+        >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
@@ -124,7 +207,7 @@ const OrderUpdate = () => {
             ></Form.Control>
           </Col>
         </Form.Group>
-        <Form.Group as={Row} className="mb-3">
+        <Form.Group as={Row} className="order-update-form__submit-button mb-3">
           <Col sm={{ span: 10, offset: 5 }}>
             <Button variant="outline-light" type="submit">
               Actualizar Órden

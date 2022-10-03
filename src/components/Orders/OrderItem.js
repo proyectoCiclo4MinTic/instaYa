@@ -10,7 +10,10 @@ const OrderItem = (props) => {
     <div className="order-item">
       <div className="order-item__id">{props.id}</div>
       <OrderDate date={props.date} />
-      <OrderDestination address={props.address} city={props.city} />
+      <OrderDestination
+        recipientAddress={props.recipientAddress}
+        recipientCity={props.recipientCity}
+      />
       <OrderStatus status={props.status} />
     </div>
     // </Card>

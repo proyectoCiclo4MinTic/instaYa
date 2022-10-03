@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 // import logo from "./logo.svg";
 import { logo, password, user } from "./index.js";
 
@@ -11,54 +12,61 @@ import OrderRegister from "./components/OrderRegister/OrderRegister.js";
 
 // React Bootstrap
 // import { Form, Button, Row, Col } from "react-bootstrap";
+const DUMMY_ORDERS = [
+  {
+    id: "1",
+    date: new Date("2022,02 ,16"),
+    recipientCity: "Barranquilla",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cumplido",
+  },
+  {
+    id: "2",
+    date: new Date("2022,05,08"),
+    recipientCity: "Cali",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cumplido",
+  },
+  {
+    id: "3",
+    date: new Date("2022,07,16"),
+    recipientCity: "Bogotá",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cancelado",
+  },
+  {
+    id: "4",
+    date: new Date("2022,08,24"),
+    recipientCity: "Cartagena",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Guardado",
+  },
+  {
+    id: "5",
+    date: new Date("2022,08,27"),
+    recipientCity: "Bucaramanga",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Guardado",
+  },
+];
+
 function App() {
-  const orders = [
-    {
-      id: "1",
-      date: new Date("2022,02 ,16"),
-      city: "Barranquilla",
-      address: "cra 01 no 23-45",
-      status: "Cumplido",
-    },
-    {
-      id: "2",
-      date: new Date("2022,05,08"),
-      city: "Cali",
-      address: "cra 01 no 23-45",
-      status: "Cumplido",
-    },
-    {
-      id: "3",
-      date: new Date("2022,07,16"),
-      city: "Bogotá",
-      address: "cra 01 no 23-45",
-      status: "Cancelado",
-    },
-    {
-      id: "4",
-      date: new Date("2022,08,24"),
-      city: "Cartagena",
-      address: "cra 01 no 23-45",
-      status: "Guardado",
-    },
-    {
-      id: "5",
-      date: new Date("2022,08,27"),
-      city: "Bucaramanga",
-      address: "cra 01 no 23-45",
-      status: "Guardado",
-    },
-  ];
+  const [orders, setOrders] = useState(DUMMY_ORDERS);
+  const addOrderHandler = (order) => {
+    // console.log("In App.js"); // TODO Testing Only
+    // console.log(order); // TODO Testing Only
+    setOrders((prevOrders) => {
+      return [order, ...prevOrders];
+    }); // Spread Operator [order, ...orders] to update State
+  }; // Retrieve data from children OrderRegister
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header> */}
-      <LoginItem></LoginItem>
-      <RegisterUserItem></RegisterUserItem>
-      <Orders items={orders}></Orders>
-      <OrderUpdate></OrderUpdate>
-      <OrderRegister></OrderRegister>
+      <LoginItem />
+      <RegisterUserItem />
+      <Orders items={orders} />
+      <OrderUpdate />
+      <OrderRegister onAddOrder={addOrderHandler} />
     </div>
   );
 }
