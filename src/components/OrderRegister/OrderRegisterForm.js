@@ -89,6 +89,7 @@ const OrderRegisterForm = (props) => {
     // console.log(orderData); // TODO Testing Only
 
     props.onSaveOrderData(orderData); // Communicates UP, Child to Parent, sending orderData
+
     /// Reset Order Form State - Two Way Binding
     setEnteredDate("");
     setEnteredTime("");

@@ -1,6 +1,7 @@
 import "./LoginItem.css";
 import { logo, password, user } from "../../index.js";
 import { Form, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function LoginItem() {
   return (
@@ -34,7 +35,7 @@ function LoginItem() {
         <Form.Group as={Row} className="mb-3">
           <Col sm={{ span: 10, offset: 5 }}>
             <Button variant="outline-light" type="submit">
-              Sign in
+              <Link to="/orders">Sign in</Link>
             </Button>
           </Col>
         </Form.Group>

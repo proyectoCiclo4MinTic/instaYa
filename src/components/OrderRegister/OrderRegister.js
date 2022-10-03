@@ -16,7 +16,7 @@ const OrderRegister = (props) => {
       id: getRandomInt(10, 999),
       status: "Guardado",
     };
-    // console.log(orderData); // TODO Testing Only
+    // console.log(orderData); // TODO 
     props.onAddOrder(orderData);
   };
 

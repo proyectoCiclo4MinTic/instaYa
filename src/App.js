@@ -11,7 +11,7 @@ import OrderItem from "./components/Orders/OrderItem";
 import Orders from "./components/Orders/Orders";
 import OrderUpdate from "./components/OrderUpdate/OrderUpdate.js";
 import OrderRegister from "./components/OrderRegister/OrderRegister.js";
-
+import { Route } from "react-router-dom";
 // React Bootstrap
 // import { Form, Button, Row, Col } from "react-bootstrap";
 const DUMMY_ORDERS = [
@@ -64,14 +64,24 @@ function App() {
 
   return (
     <div className="App">
-      <LoginItem />
-      <RegisterUserItem />
-      <Fragment>
+      <Route path="/login">
+        <LoginItem />
+      </Route>
+      <Route path="/registeruser">
+        <RegisterUserItem />
+      </Route>
+      {/* <Fragment>
         <Header />
-      </Fragment>
-      <Orders items={orders} />
-      <OrderUpdate />
-      <OrderRegister onAddOrder={addOrderHandler} />
+      </Fragment> */}
+      <Route path="/orders">
+        <Orders items={orders} />
+      </Route>
+      <Route path="/orderupdate">
+        <OrderUpdate />
+      </Route>
+      <Route path="/orderregister">
+        <OrderRegister onAddOrder={addOrderHandler} />
+      </Route>
     </div>
   );
 }
