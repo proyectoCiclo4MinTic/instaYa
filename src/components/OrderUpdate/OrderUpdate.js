@@ -2,11 +2,15 @@ import "./OrderUpdate.css";
 import { logo, password, user } from "../../index.js";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import Card from "../UI/Card";
+import { useParams } from "react-router-dom";
 
 const OrderUpdate = () => {
+  const params = useParams();
+  console.log(params.orderID);
   return (
     <div className="order-update">
-      <h2>Actualización de Órdenes</h2>
+      <h2>Actualización de Órden #: {params.orderID}</h2>
+      <h3></h3>
 
       <Form className="order-update-form register-user-item__register">
         <Form.Group

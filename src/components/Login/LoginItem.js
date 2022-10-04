@@ -2,6 +2,7 @@ import "./LoginItem.css";
 import { logo, password, user } from "../../index.js";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+// import Button from "react-bootstrap/Button";
 
 function LoginItem() {
   return (
@@ -9,6 +10,7 @@ function LoginItem() {
       <header className="login-item__header">
         <img src={logo} className="login-item__logo" alt="Logo" />
       </header>
+
       <Form className="login">
         <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
           <Col sm={1}>
@@ -40,6 +42,9 @@ function LoginItem() {
           </Col>
         </Form.Group>
       </Form>
+      <Button variant="link" className="orders__button-create" onClick={""}>
+        Registrarme
+      </Button>
     </div>
   );
 }
