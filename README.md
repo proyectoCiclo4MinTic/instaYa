@@ -49,6 +49,7 @@ Equipo No. **06**
   - [Creación proyecto en Git](#creación-proyecto-en-git)
     - [Github](#github)
   - [Requerimientos de Ejecución](#requerimientos-de-ejecución)
+  - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
 
 ---
 
@@ -342,9 +343,23 @@ nodejs
 create-react-app
 react-bootstrap
 bootstrap
+react-router-dom@5
 ```
 
 [Regresar &#8617;](#tabla-de-contenido)
+
+## Cronograma de Proyecto - Sprint 3
+
+<!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
+<!-- https://plantuml.com/gantt-diagram -->
+
+![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2](assets-documento/img/cronograma/cronograma-tareasSprint3.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2")
+
+**Diagrama 4** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 3_
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
 
 [^fn1]: Ministerio de Comercio, Industria y Turismo.(5 de mayo de 2022). _Políticas de tratamiento de datos personales_. https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales
 [^fn2]: Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing
