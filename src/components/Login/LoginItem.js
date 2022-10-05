@@ -42,9 +42,9 @@ function LoginItem() {
           </Col>
         </Form.Group>
       </Form>
-      <Button variant="link" className="orders__button-create" onClick={""}>
+      <Link variant="link" className="orders__button-create" onClick={""}>
         Registrarme
-      </Button>
+      </Link>
     </div>
   );
 }
