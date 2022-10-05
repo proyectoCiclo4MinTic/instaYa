@@ -51,6 +51,8 @@ Equipo No. **06**
   - [Requerimientos de Ejecución](#requerimientos-de-ejecución)
   - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
   - [Componentes desarrollados](#componentes-desarrollados)
+  - [Formularios desarrollados](#Formularios-desarrollados)
+  
 ---
 
 <div style="page-break-after: always"></div>
