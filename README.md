@@ -50,7 +50,7 @@ Equipo No. **06**
     - [Github](#github)
   - [Requerimientos de Ejecución](#requerimientos-de-ejecución)
   - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
-
+  - [Componentes desarrollados](#componentes-desarrollados)
 ---
 
 <div style="page-break-after: always"></div>
@@ -358,6 +358,40 @@ react-router-dom@5
 **Diagrama 4** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 3_
 
 [Regresar &#8617;](#tabla-de-contenido)
+
+## Componentes desarrollados
+<!-- prettier-ignore -->
+| Componente  | Vista de la que hace parte | Vista previa |
+| --- | ---------- | ----------- |
+| LoginItem | Imagen 3: Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
+| Orders | Imagen 6: Vista Mockup Órdenes | ![Vista Orders](assets-documento/img/components/OrdersComponent.png) |
+| OrderItem | Imagen 6: Vista Mockup Órdenes | ![Vista OrderItem](assets-documento/img/components/OrderItem.png) |
+| OrderDate | Imagen 6: Vista Mockup Órdenes | ![Vista OrderDate](assets-documento/img/components/OrderDate.png) |
+| OrderDestination | Imagen 6: Vista Mockup Órdenes | ![Vista OrderDestination](assets-documento/img/components/OrderDestination.png) |
+| OrderStatus | Imagen 6: Vista Mockup Órdenes | ![Vista OrderStatus](assets-documento/img/components/OrderStatus.png) |
+| OrderRegister | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegister](assets-documento/img/components/OrderRegister.png) |
+| OrderRegisterForm | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
+| OrderUpdate | Imagen 7: Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
+| RegisterUserItem | Imagen 5: Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
+
+**Tabla 8** - Componentes desarrollados
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+
+## Formularios desarrollados
+<!-- prettier-ignore -->
+| Formulario  | Vista de la que hace parte | Vista previa |
+| --- | ---------- | ----------- |
+| Login | Imagen 3: Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
+| Registro Nueva Orden | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
+| Actualización Orden | Imagen 7: Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
+| Registro Nuevo Usuario | Imagen 5: Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
+
+**Tabla 9** - Formularios desarrollados
+
+[Regresar &#8617;](#tabla-de-contenido)
+
 
 <div style="page-break-after: always"></div>
 
