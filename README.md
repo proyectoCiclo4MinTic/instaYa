@@ -49,10 +49,10 @@ Equipo No. **06**
   - [Creación proyecto en Git](#creación-proyecto-en-git)
     - [Github](#github)
   - [Requerimientos de Ejecución](#requerimientos-de-ejecución)
-  - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
   - [Componentes desarrollados](#componentes-desarrollados)
-  - [Formularios desarrollados](#Formularios-desarrollados)
-  
+  - [Formularios desarrollados](#formularios-desarrollados)
+  - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
+
 ---
 
 <div style="page-break-after: always"></div>
@@ -303,7 +303,7 @@ Deben tener en cuenta las siguientes funcionalidades:
 
 <img title="Mapa de Navegabilidad plataforma instaYa" src="assets-documento/img/diagramas/navegabilidad.png" alt="Mapa de Navegabilidad plataforma instaYa" height= "90%" width="90%">
 
-**Imagen 10** - _Mapa de Navegabilidad plataforma instaYa_
+**Diagrama 5** - _Diagrama Mapa de Navegabilidad plataforma instaYa_
 
 [Regresar &#8617;](#tabla-de-contenido)
 
@@ -320,7 +320,7 @@ https://react-bootstrap.github.io/
 bootstrap/dist/css/bootstrap.min.css
 
 ![Test Vista Login Aplicación React & Bootstrap](assets-documento/img/app/reactapp01.png "Test Vista Login Aplicación React & Bootstrap")
-**Imagen 11** - _Test Vista Login Aplicación React & Bootstrap_
+**Imagen 10** - _Test Vista Login Aplicación React & Bootstrap_
 
 [Regresar &#8617;](#tabla-de-contenido)
 
@@ -350,6 +350,42 @@ react-router-dom@5
 
 [Regresar &#8617;](#tabla-de-contenido)
 
+## Componentes desarrollados
+
+<!-- prettier-ignore -->
+| Componente  | Vista de la que hace parte | Vista previa |
+| --- | ---------- | ----------- |
+| LoginItem | Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
+| Orders | Vista Mockup Órdenes | ![Vista Orders](assets-documento/img/components/OrdersComponent.png) |
+| OrderItem | Vista Mockup Órdenes | ![Vista OrderItem](assets-documento/img/components/OrderItem.png) |
+| OrderDate | Vista Mockup Órdenes | ![Vista OrderDate](assets-documento/img/components/OrderDate.png) |
+| OrderDestination | Vista Mockup Órdenes | ![Vista OrderDestination](assets-documento/img/components/OrderDestination.png) |
+| OrderStatus | Vista Mockup Órdenes | ![Vista OrderStatus](assets-documento/img/components/OrderStatus.png) |
+| OrderRegister | Vista Mockup Registro Orden | ![Vista OrderRegister](assets-documento/img/components/OrderRegister.png) |
+| OrderRegisterForm | Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
+| OrderUpdate | Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
+| RegisterUserItem | Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
+
+**Tabla 8** - Componentes desarrollados
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+## Formularios desarrollados
+
+<!-- prettier-ignore -->
+| Formulario  | Vista de la que hace parte | Vista previa |
+| --- | ---------- | ----------- |
+| Login | Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
+| Registro Nueva Orden | Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
+| Actualización Orden | Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
+| Registro Nuevo Usuario | Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
+
+**Tabla 9** - Formularios desarrollados
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+<div style="page-break-after: always"></div>
+
 ## Cronograma de Proyecto - Sprint 3
 
 <!-- TODO NOTA Este diagrama de gantt está realizado en plantuml pero al git no leer directamente este tipo de diagramas sino con una extensión que no he revisado bien, se puede trabajar externo e importarlo en SVG ó PNG -->
@@ -357,45 +393,9 @@ react-router-dom@5
 
 ![Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2](assets-documento/img/cronograma/cronograma-tareasSprint3.svg "Diagrama Gantt - Cronograma/Rúbrica General del Proyecto para Sprint 2")
 
-**Diagrama 4** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 3_
+**Diagrama 6** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 3_
 
 [Regresar &#8617;](#tabla-de-contenido)
-
-## Componentes desarrollados
-<!-- prettier-ignore -->
-| Componente  | Vista de la que hace parte | Vista previa |
-| --- | ---------- | ----------- |
-| LoginItem | Imagen 3: Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
-| Orders | Imagen 6: Vista Mockup Órdenes | ![Vista Orders](assets-documento/img/components/OrdersComponent.png) |
-| OrderItem | Imagen 6: Vista Mockup Órdenes | ![Vista OrderItem](assets-documento/img/components/OrderItem.png) |
-| OrderDate | Imagen 6: Vista Mockup Órdenes | ![Vista OrderDate](assets-documento/img/components/OrderDate.png) |
-| OrderDestination | Imagen 6: Vista Mockup Órdenes | ![Vista OrderDestination](assets-documento/img/components/OrderDestination.png) |
-| OrderStatus | Imagen 6: Vista Mockup Órdenes | ![Vista OrderStatus](assets-documento/img/components/OrderStatus.png) |
-| OrderRegister | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegister](assets-documento/img/components/OrderRegister.png) |
-| OrderRegisterForm | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
-| OrderUpdate | Imagen 7: Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
-| RegisterUserItem | Imagen 5: Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
-
-**Tabla 8** - Componentes desarrollados
-
-[Regresar &#8617;](#tabla-de-contenido)
-
-
-## Formularios desarrollados
-<!-- prettier-ignore -->
-| Formulario  | Vista de la que hace parte | Vista previa |
-| --- | ---------- | ----------- |
-| Login | Imagen 3: Vista Mockup Login | ![Vista LoginItem](assets-documento/img/components/LoginItemComponent.png) |
-| Registro Nueva Orden | Imagen 8: Vista Mockup Registro Orden | ![Vista OrderRegisterForm](assets-documento/img/components/OrderRegisterForm.png) |
-| Actualización Orden | Imagen 7: Vista Mockup Actualizar Orden | ![Vista OrderUpdate](assets-documento/img/components/OrderUpdate.png) |
-| Registro Nuevo Usuario | Imagen 5: Vista Mockup Registro | ![Vista RegisterUserItem](assets-documento/img/components/RegisterUserItem.png) |
-
-**Tabla 9** - Formularios desarrollados
-
-[Regresar &#8617;](#tabla-de-contenido)
-
-
-<div style="page-break-after: always"></div>
 
 [^fn1]: Ministerio de Comercio, Industria y Turismo.(5 de mayo de 2022). _Políticas de tratamiento de datos personales_. https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales
 [^fn2]: Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing
