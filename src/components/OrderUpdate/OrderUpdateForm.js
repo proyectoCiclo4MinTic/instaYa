@@ -1,13 +1,15 @@
-import React, { useState } from "react";
-import "./OrderRegisterForm.css";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import classes from "./OrderUpdateForm.module.css";
 import { logo, password, user } from "../../index.js";
 
-const OrderRegisterForm = (props) => {
+import { Form, Button, Row, Col } from "react-bootstrap";
+
+const OrderUpdateForm = (props) => {
   /// INITIAL STATE INITIALIZE
   // Delivery
   const [enteredDate, setEnteredDate] = useState("");
   const [enteredTime, setEnteredTime] = useState("");
+  const [enteredStatus, setEnteredStatus] = useState("");
   // Package
   const [enteredLength, setEnteredLength] = useState("");
   const [enteredWidth, setEnteredWidth] = useState("");
@@ -30,6 +32,9 @@ const OrderRegisterForm = (props) => {
   };
   const timeChangeHandler = (event) => {
     setEnteredTime(event.target.value);
+  };
+  const statusChangeHandler = (event) => {
+    setEnteredStatus(event.target.value);
   };
   // Package
   const lengthChangeHandler = (event) => {
@@ -68,12 +73,14 @@ const OrderRegisterForm = (props) => {
   const recipientCityChangeHandler = (event) => {
     setEnteredRecipientCity(event.target.value);
   };
+
   /// FORM SUBMIT BUTTON
   const submitHandler = (event) => {
     event.preventDefault(); // Prevents HTTP Request and Page Reloading when submitting form data
     const orderData = {
       date: new Date(enteredDate),
       time: enteredTime,
+      status: enteredStatus,
       length: enteredLength,
       width: enteredWidth,
       height: enteredHeight,
@@ -93,6 +100,7 @@ const OrderRegisterForm = (props) => {
     /// Reset Order Form State - Two Way Binding
     setEnteredDate("");
     setEnteredTime("");
+    setEnteredStatus("");
     setEnteredLength("");
     setEnteredWidth("");
     setEnteredHeight("");
@@ -109,12 +117,12 @@ const OrderRegisterForm = (props) => {
   return (
     <div>
       <Form
-        className="order-register-form register-user-item__register"
+        className="order-update-form register-user-item__register"
         onSubmit={submitHandler}
       >
         <Form.Group
           as={Row}
-          className="order-register-form__date mb-3"
+          className="order-update-form__date mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -123,14 +131,14 @@ const OrderRegisterForm = (props) => {
           <Col sm={3}>
             <Form.Control
               type="date"
-              value={enteredDate} // Two-way Binding
               onChange={dateChangeHandler}
-            ></Form.Control>
+              value={enteredDate}
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__hour mb-3"
+          className="order-update-form__time mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -139,17 +147,38 @@ const OrderRegisterForm = (props) => {
           <Col sm={3}>
             <Form.Control
               type="time"
-              value={enteredTime}
-              onChange={timeChangeHandler}
               min="08:00"
               max="17:00"
-            ></Form.Control>
+              onChange={timeChangeHandler}
+              value={enteredTime}
+            />
+          </Col>
+        </Form.Group>
+        <Form.Group
+          as={Row}
+          className="order-update-form__status mb-3"
+          controlId=""
+        >
+          <Col sm={1}>
+            <img src={user} alt="Logo"></img>
+          </Col>
+          <Col sm={3}>
+            <Form.Select
+              aria-label="Default select example"
+              value={enteredStatus}
+              onChange={statusChangeHandler}
+            >
+              <option>Estado</option>
+              <option value="1">Guardado</option>
+              <option value="2">Cumplido</option>
+              <option value="3">Cancelado</option>
+            </Form.Select>
           </Col>
         </Form.Group>
 
         <Form.Group
           as={Row}
-          className="order-register-form__length mb-3"
+          className="order-update-form__length mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -158,15 +187,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={2}>
             <Form.Control
               type="number"
+              placeholder="Largo cm"
               value={enteredLength}
               onChange={lengthChangeHandler}
-              placeholder="Largo cm"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__width mb-3"
+          className="order-update-form__width mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -175,15 +204,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={2}>
             <Form.Control
               type="number"
+              placeholder="Ancho cm"
               value={enteredWidth}
               onChange={widthChangeHandler}
-              placeholder="Ancho cm"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__height mb-3"
+          className="order-update-form__height mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -192,15 +221,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={2}>
             <Form.Control
               type="number"
+              placeholder="Alto cm"
               value={enteredHeight}
               onChange={heightChangeHandler}
-              placeholder="Alto cm"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__weight mb-3"
+          className="order-update-form__weight mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -209,15 +238,16 @@ const OrderRegisterForm = (props) => {
           <Col sm={2}>
             <Form.Control
               type="number"
+              placeholder="Peso grs"
               value={enteredWeight}
               onChange={weightChangeHandler}
-              placeholder="Peso grs"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
+
         <Form.Group
           as={Row}
-          className="order-register-form__delicate mb-3"
+          className="order-update-form__delicate mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -235,9 +265,10 @@ const OrderRegisterForm = (props) => {
             </Form.Select>
           </Col>
         </Form.Group>
+
         <Form.Group
           as={Row}
-          className="order-register-form__sender-address mb-3"
+          className="order-update-form__sender-address mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -246,15 +277,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={10}>
             <Form.Control
               type="text"
+              placeholder="Dirección recogida"
               value={enteredSenderAddress}
               onChange={senderAddressChangeHandler}
-              placeholder="Dirección recogida"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__sender-city mb-3"
+          className="order-update-form__sender-city mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -263,32 +294,33 @@ const OrderRegisterForm = (props) => {
           <Col sm={10}>
             <Form.Control
               type="text"
+              placeholder="Ciudad recogida"
               value={enteredSenderCity}
               onChange={senderCityChangeHandler}
-              placeholder="Ciudad recogida"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__recipient-name mb-3"
+          className="order-update-form__recipient-name mb-3"
           controlId=""
         >
           <Col sm={1}>
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={10}>
+            <p>{props.recipientName}</p>
             <Form.Control
               type="text"
+              placeholder="Nombre completo destinatario"
               value={enteredRecipientName}
               onChange={recipientNameChangeHandler}
-              placeholder="Nombre destinatario"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__recipient-id mb-3"
+          className="order-update-form__recipient-id mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -297,15 +329,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={10}>
             <Form.Control
               type="text"
+              placeholder="Cédula/Nit destinatario"
               value={enteredRecipientID}
               onChange={recipientIDChangeHandler}
-              placeholder="Cédula/Nit destinatario"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__recipient-address mb-3"
+          className="order-update-form__recipient-address mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -314,15 +346,15 @@ const OrderRegisterForm = (props) => {
           <Col sm={10}>
             <Form.Control
               type="text"
+              placeholder="Dirección entrega"
               value={enteredRecipientAddress}
               onChange={recipientAddressChangeHandler}
-              placeholder="Dirección entrega"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
         <Form.Group
           as={Row}
-          className="order-register-form__recipient-city mb-3"
+          className="order-update-form__recipient-city mb-3"
           controlId=""
         >
           <Col sm={1}>
@@ -331,25 +363,22 @@ const OrderRegisterForm = (props) => {
           <Col sm={10}>
             <Form.Control
               type="text"
+              placeholder="Ciudad entrega"
               value={enteredRecipientCity}
               onChange={recipientCityChangeHandler}
-              placeholder="Ciudad entrega"
-            ></Form.Control>
+            />
           </Col>
         </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-register-form__submit-button mb-3"
-        >
+        <Form.Group as={Row} className="order-update-form__submit-button mb-3">
           <Col sm={{ span: 10, offset: 5 }}>
             <Button variant="outline-light" type="submit">
-              Crear Órden
+              Actualizar Órden
             </Button>
           </Col>
         </Form.Group>
       </Form>
-      ;
     </div>
   );
 };
-export default OrderRegisterForm;
+
+export default OrderUpdateForm;

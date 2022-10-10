@@ -1,224 +1,70 @@
 import "./OrderUpdate.css";
-import { logo, password, user } from "../../index.js";
-import { Form, Button, Row, Col } from "react-bootstrap";
 import Card from "../UI/Card";
 import { useParams } from "react-router-dom";
+import OrderUpdateForm from "./OrderUpdateForm";
+
+const DUMMY_ORDERS = [
+  {
+    id: "1",
+    date: new Date("2022,02 ,16"),
+    recipientName: "Fulanito De Tal",
+    recipientCity: "Barranquilla",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cumplido",
+  },
+  {
+    id: "2",
+    date: new Date("2022,05,08"),
+    recipientName: "Perencejito Pérez",
+    recipientCity: "Cali",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cumplido",
+  },
+  {
+    id: "3",
+    date: new Date("2022,07,16"),
+    recipientName: "Goku Son",
+    recipientCity: "Bogotá",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Cancelado",
+  },
+  {
+    id: "4",
+    date: new Date("2022,08,24"),
+    recipientName: "Clark Kent",
+    recipientCity: "Cartagena",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Guardado",
+  },
+  {
+    id: "5",
+    date: new Date("2022,08,27"),
+    recipientName: "Naruto Uzumaki",
+    recipientCity: "Bucaramanga",
+    recipientAddress: "cra 01 no 23-45",
+    status: "Guardado",
+  },
+];
 
 const OrderUpdate = () => {
   const params = useParams();
   console.log(params.orderID);
+
+  const order = DUMMY_ORDERS.find((order) => order.id === params.orderID);
+  if (!order) {
+    return <p>No existen orden con id # {params.orderID}</p>;
+  }
   return (
     <div className="order-update">
       <h2>Actualización de Órden #: {params.orderID}</h2>
       <h3></h3>
-
-      <Form className="order-update-form register-user-item__register">
-        <Form.Group
-          as={Row}
-          className="order-update-form__date mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={3}>
-            <Form.Control type="date"></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__time mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={3}>
-            <Form.Control type="time" min="08:00" max="17:00"></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__status mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={3}>
-            <Form.Select aria-label="Default select example">
-              <option>Estado</option>
-              <option value="1">Guardado</option>
-              <option value="2">Cumplido</option>
-              <option value="3">Cancelado</option>
-            </Form.Select>
-          </Col>
-        </Form.Group>
-
-        <Form.Group
-          as={Row}
-          className="order-update-form__length mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={2}>
-            <Form.Control type="number" placeholder="Largo cm"></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__width mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={2}>
-            <Form.Control type="number" placeholder="Ancho cm"></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__height mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={2}>
-            <Form.Control type="number" placeholder="Alto cm"></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__weight mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={2}>
-            <Form.Control type="number" placeholder="Peso grs"></Form.Control>
-          </Col>
-        </Form.Group>
-
-        <Form.Group
-          as={Row}
-          className="order-update-form__delicate mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={3}>
-            <Form.Select aria-label="Default select example">
-              <option>Delicado/No Delicado</option>
-              <option value="1">Delicado</option>
-              <option value="2">No Delicado</option>
-            </Form.Select>
-          </Col>
-        </Form.Group>
-
-        <Form.Group
-          as={Row}
-          className="order-update-form__sender-address mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Dirección recogida"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__sender-city mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Ciudad recogida"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__recipient-name mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Nombre completo destinatario"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__recipient-id mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Cédula/Nit destinatario"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__recipient-address mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Dirección entrega"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group
-          as={Row}
-          className="order-update-form__recipient-city mb-3"
-          controlId=""
-        >
-          <Col sm={1}>
-            <img src={user} alt="Logo"></img>
-          </Col>
-          <Col sm={10}>
-            <Form.Control
-              type="text"
-              placeholder="Ciudad entrega"
-            ></Form.Control>
-          </Col>
-        </Form.Group>
-        <Form.Group as={Row} className="order-update-form__submit-button mb-3">
-          <Col sm={{ span: 10, offset: 5 }}>
-            <Button variant="outline-light" type="submit">
-              Actualizar Órden
-            </Button>
-          </Col>
-        </Form.Group>
-      </Form>
+      <OrderUpdateForm
+        id={order.id}
+        date={order.date}
+        recipientCity={order.recipientCity}
+        recipientAddress={order.recipientAddress}
+        status={order.status}
+      />
     </div>
   );
 };

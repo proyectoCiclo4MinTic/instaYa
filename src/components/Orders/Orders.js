@@ -2,6 +2,7 @@ import OrderItem from "./OrderItem";
 import Card from "../UI/Card";
 import "./Orders.css";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const Orders = (props) => {
   const createOrderHandler = () => {
@@ -10,13 +11,14 @@ const Orders = (props) => {
   return (
     <div className="orders">
       <h2>Listado de Órdenes</h2>
-      <Button
+      <Link
         variant="link"
         className="orders__button-create"
         onClick={createOrderHandler}
+        to="../create-order/"
       >
         Crear Orden
-      </Button>
+      </Link>
 
       {props.items.map((order) => (
         <OrderItem
