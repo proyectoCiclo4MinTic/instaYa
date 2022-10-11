@@ -68,6 +68,7 @@ function App() {
       {/* Routes(before Switch) only one active route at a time*/}
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
+
         <Route path="/login" element={<LoginItem />} />
         <Route path="/register-user" element={<RegisterUserItem />} />
         <Route path="/orders" element={<Orders items={orders} />} />

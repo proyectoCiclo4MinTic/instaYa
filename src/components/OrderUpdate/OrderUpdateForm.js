@@ -20,7 +20,9 @@ const OrderUpdateForm = (props) => {
   const [enteredSenderAddress, setEnteredSenderAddress] = useState("");
   const [enteredSenderCity, setEnteredSenderCity] = useState("");
   // Recipient
-  const [enteredRecipientName, setEnteredRecipientName] = useState("");
+  const [enteredRecipientName, setEnteredRecipientName] = useState(
+    props.recipientName
+  );
   const [enteredRecipientID, setEnteredRecipientID] = useState("");
   const [enteredRecipientAddress, setEnteredRecipientAddress] = useState("");
   const [enteredRecipientCity, setEnteredRecipientCity] = useState("");
@@ -309,7 +311,6 @@ const OrderUpdateForm = (props) => {
             <img src={user} alt="Logo"></img>
           </Col>
           <Col sm={10}>
-            <p>{props.recipientName}</p>
             <Form.Control
               type="text"
               placeholder="Nombre completo destinatario"
