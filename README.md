@@ -52,6 +52,10 @@ Equipo No. **06**
   - [Componentes desarrollados](#componentes-desarrollados)
   - [Formularios desarrollados](#formularios-desarrollados)
   - [Cronograma de Proyecto - Sprint 3](#cronograma-de-proyecto---sprint-3)
+  - [Solicitudes a la API](#solicitudes-a-la-API)
+  - [Listado de dependencias](#listado-de-dependencias)
+  - [Funcionalidades o módulos del Back-End](#funcionalidades-o-módulos-del-Back---End)
+  - [Despliegue](#Despliegue)
 
 ---
 
@@ -396,6 +400,67 @@ react-router-dom@5
 **Diagrama 6** - _Diagrama Gantt - Cronograma / Rúbrica General del Proyecto para Sprint 3_
 
 [Regresar &#8617;](#tabla-de-contenido)
+
+
+## Solicitudes a la API
+
+<!-- prettier-ignore -->
+| Vista  | Acción Backend | Descripción |
+| ------ | -------------- | ----------- |
+| Modelo de Órdenes | Listar todas las órdenes | Se realiza petición con método GET a la base de datos para generar listado de todas las órdenes creadas por el usuario que ha iniciado sesión |
+| Login | Obtener usuario y contraseña | Se realiza petición GET a la base de datos para traer el usuario y contraseña, desencriptarla y compararlas con el usuario y contraseña digitadas para iniciar sesión |
+| Formulario creación de usuarios | Guardar nuevo usuario | Se realiza petición GET con el nombre de usuario a la base de datos para comprobar que el usuario no exista y posteriormente una petición POST para crear al usuario y guardarlo en la BD |
+| Formulario creción de orden | Guardar orden en la BD | Realizar petición POST a la base de datos para guardar la orden creada |
+| Formulario Actualización de orden | Actualizar orden en la BD | Primero, realiza petición GET para traer los datos de la orden seleccionada. Una vez se guarden los datos nuevos, se realiza petición POST para actualizar los datos de esa orden en la BD |
+
+**Tabla 10** - Solicitudes a la API
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+
+## Listado de Dependencias
+
+```json
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.1",
+    "mongodb": "^4.10.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  }
+```
+
+
+
+## Funcionalidades o módulos del Back-End
+
+<!-- prettier-ignore -->
+| Funcionalidad o módulo  | Descripción |
+| ----------------------- | ----------- |
+| Módulo de usuarios | Creación de usuario, lectura de datos de usuario |
+| Módulo de autenticación | Registro de un usuario, inicio de sesión con verificación y codificación hash | 
+| Módulo de órdenes | CRUD de órdenes. Incluye lista de órdenes, creación de órdenes y actualización de órdenes |
+
+**Tabla 11** - Funcionalidades o módulos del Back-End
+
+[Regresar &#8617;](#tabla-de-contenido)
+
+## Despliegue
+
+Se generó un error en el intento de realizar el despliegue y no hubo tiempo de corregirlo. Se muestra evidencia
+
+![Error Despliegue](assets-documento/img/other/error_despliegue.png "Error Despliegue")
+**Imagen 11** - _Error Despliegue_
 
 [^fn1]: Ministerio de Comercio, Industria y Turismo.(5 de mayo de 2022). _Políticas de tratamiento de datos personales_. https://www.mincit.gov.co/servicio-ciudadano/politicas-de-tratamiento-de-datos-personales
 [^fn2]: Everet, J. (2021). _Practical Fibonacci: A Beginner's Guide to Relative Sizing_ [Tabla]. > Recuperado de https://www.scrum.org/resources/blog/practical-fibonacci-beginners-guide-relative-sizing
